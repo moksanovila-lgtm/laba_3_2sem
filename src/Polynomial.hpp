@@ -28,6 +28,7 @@ public:
     Polynomial<T> operator+(const Polynomial<T>& other) const;
     Polynomial<T> operator*(const Polynomial<T>& other) const;
     Polynomial<T> operator*(const T& scalar) const;
+    Polynomial<T>& operator=(const Polynomial<T>& other);
     
     std::string ToString() const;
 };

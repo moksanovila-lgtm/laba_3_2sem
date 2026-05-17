@@ -1,7 +1,11 @@
 #include <string>
 #include <sstream>
+#include <iomanip>      
+#include <cmath>  
 #include <algorithm>
+#include <complex>
 #include "Polynomial.hpp"
+#include "Matrix.hpp"
 
 template <typename T>
 Polynomial<T>::Polynomial() 
@@ -127,24 +131,8 @@ Polynomial<T> Polynomial<T>::operator*(const T& scalar) const {
     return MultiplyByScalar(scalar);
 }
 
-// template <typename T>
-// Polynomial<T>& Polynomial<T>::operator=(const Polynomial<T>& other) {
-//     if (this != &other) {
-//         while (this->GetCount() > 0) {
-//             this->RemoveAt(this->GetCount() - 1);
-//         }
-
-//         for (size_t i = 0; i < other.GetCount(); ++i) {
-//             this->Append(other.Get(i));
-//         }
-        
-//         degree = other.degree;
-//     }
-//     return *this;
-// }
-
 template <typename T>
-std::string Polynomial<T>::ToString() const {
+inline std::string Polynomial<T>::ToString() const {
     if (this->GetCount() == 0) return "0";
     
     std::stringstream ss;
@@ -154,7 +142,9 @@ std::string Polynomial<T>::ToString() const {
         T coeff = this->Get(i);
         if (coeff == T(0)) continue;
         
-        if (!first && coeff > T(0)) ss << "+";
+        if (!first) {
+            if (coeff > T(0)) ss << "+";
+        }
         first = false;
         
         if (i == 0) {
@@ -172,4 +162,153 @@ std::string Polynomial<T>::ToString() const {
     
     if (first) return "0";
     return ss.str();
+}
+
+inline std::string formatDouble(double value) {
+    std::stringstream ss;
+    if (std::abs(value - std::round(value)) < 1e-10) {
+        ss << static_cast<long long>(value);
+    } else {
+        ss << std::fixed << std::setprecision(2) << value;
+    }
+    return ss.str();
+}
+
+template <>
+inline std::string Polynomial<std::complex<double>>::ToString() const {
+    if (this->GetCount() == 0) return "0";
+    
+    std::stringstream ss;
+    bool first = true;
+    
+    for (int i = this->GetCount() - 1; i >= 0; --i) {
+        std::complex<double> coeff = this->Get(i);
+        if (coeff == std::complex<double>(0, 0)) continue;
+        
+        if (!first) ss << "+";
+        first = false;
+        
+        std::string realStr = formatDouble(coeff.real());
+        std::string imagStr = formatDouble(std::abs(coeff.imag()));
+        
+        std::string complexStr;
+        if (coeff.imag() == 0) {
+            complexStr = realStr;
+        } else if (coeff.real() == 0) {
+            complexStr = imagStr + "i";
+            if (coeff.imag() < 0) complexStr = "-" + complexStr;
+        } else {
+            complexStr = realStr;
+            if (coeff.imag() > 0) complexStr += "+";
+            else complexStr += "-";
+            complexStr += imagStr + "i";
+        }
+        
+        if (i == 0) {
+            ss << "(" << complexStr << ")";
+        } else if (i == 1) {
+            if (complexStr == "1") ss << "x";
+            else if (complexStr == "-1") ss << "-x";
+            else ss << "(" << complexStr << ")x";
+        } else {
+            if (complexStr == "1") ss << "x^" << i;
+            else if (complexStr == "-1") ss << "-x^" << i;
+            else ss << "(" << complexStr << ")x^" << i;
+        }
+    }
+    
+    if (first) return "0";
+    return ss.str();
+}
+
+
+// template <>
+// inline std::string Polynomial<std::complex<double>>::ToString() const {
+//     if (this->GetCount() == 0) return "0";
+    
+//     std::stringstream ss;
+//     bool first = true;
+    
+//     for (int i = this->GetCount() - 1; i >= 0; --i) {
+//         std::complex<double> coeff = this->Get(i);
+//         if (coeff == std::complex<double>(0, 0)) continue;
+        
+//         if (!first) ss << "+";
+//         first = false;
+        
+//         std::string complexStr;
+//         if (coeff.imag() == 0) {
+//             complexStr = std::to_string(coeff.real());
+//         } else if (coeff.real() == 0) {
+//             complexStr = std::to_string(coeff.imag()) + "i";
+//         } else {
+//             complexStr = std::to_string(coeff.real());
+//             if (coeff.imag() > 0) complexStr += "+";
+//             complexStr += std::to_string(coeff.imag()) + "i";
+//         }
+        
+//         if (i == 0) {
+//             ss << "(" << complexStr << ")";
+//         } else if (i == 1) {
+//             if (complexStr == "1") ss << "x";
+//             else if (complexStr == "-1") ss << "-x";
+//             else ss << "(" << complexStr << ")x";
+//         } else {
+//             if (complexStr == "1") ss << "x^" << i;
+//             else if (complexStr == "-1") ss << "-x^" << i;
+//             else ss << "(" << complexStr << ")x^" << i;
+//         }
+//     }
+    
+//     if (first) return "0";
+//     return ss.str();
+// }
+
+template <>
+inline std::string Polynomial<Matrix<int>>::ToString() const {
+    if (this->GetCount() == 0) return "0";
+    
+    std::stringstream ss;
+    bool first = true;
+    
+    for (int i = this->GetCount() - 1; i >= 0; --i) {
+        Matrix<int> coeff = this->Get(i);
+        
+        bool isZero = true;
+        for (size_t r = 0; r < coeff.GetSize() && isZero; ++r) {
+            for (size_t c = 0; c < coeff.GetSize() && isZero; ++c) {
+                if (coeff(r, c) != 0) isZero = false;
+            }
+        }
+        
+        if (isZero) continue;
+        
+        if (!first) ss << "+";
+        first = false;
+        
+        if (i == 0) {
+            ss << coeff;
+        } else if (i == 1) {
+            ss << coeff << "x";
+        } else {
+            ss << coeff << "x^" << i;
+        }
+    }
+    
+    if (first) return "0";
+    return ss.str();
+}
+
+template <typename T>
+Polynomial<T>& Polynomial<T>::operator=(const Polynomial<T>& other) {
+    if (this != &other) {
+        this->Clear();
+     
+        for (size_t i = 0; i < other.GetCount(); ++i) {
+            this->Append(other.Get(i));
+        }
+        
+        degree = other.degree;
+    }
+    return *this;
 }

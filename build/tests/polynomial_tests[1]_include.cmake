@@ -1,0 +1,5 @@
+if(EXISTS "D:/Lab_3/build/tests/polynomial_tests[1]_tests.cmake")
+  include("D:/Lab_3/build/tests/polynomial_tests[1]_tests.cmake")
+else()
+  add_test(polynomial_tests_NOT_BUILT polynomial_tests_NOT_BUILT)
+endif()

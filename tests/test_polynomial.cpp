@@ -1,6 +1,8 @@
 #include <gtest/gtest.h>
 #include "Polynomial.hpp"
+#include "Matrix.hpp"
 #include <sstream>
+#include <string>
 
 template <typename T>
 std::string PolyToStr(Polynomial<T>& p) {

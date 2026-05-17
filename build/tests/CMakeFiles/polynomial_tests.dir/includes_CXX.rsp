@@ -1,0 +1,1 @@
+-ID:/Lab_3/tests/../third_party/Lab_2/library/include -ID:/Lab_3/tests/../src -isystem "D:/Lab_3/build/_deps/googletest-src/googletest/include" -isystem "D:/Lab_3/build/_deps/googletest-src/googletest"
