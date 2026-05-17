@@ -243,13 +243,8 @@ tests/CMakeFiles/polynomial_tests.dir/test_polynomial_matrix.cpp.obj: \
  D:/Lab_3/third_party/Lab_2/library/include/DynamicArray.tpp \
  D:/Lab_3/third_party/Lab_2/library/include/ArraySequence.tpp \
  D:/Lab_3/src/Polynomial.tpp \
- C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/algorithm \
- C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algo.h \
- C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/algorithmfwd.h \
- C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_heap.h \
- C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/uniform_int_dist.h \
- C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/glue_algorithm_defs.h \
- C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/complex \
+ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iomanip \
+ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/quoted_string.h \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cmath \
  C:/w64devkit/include/math.h \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/specfun.h \
@@ -265,4 +260,11 @@ tests/CMakeFiles/polynomial_tests.dir/test_polynomial_matrix.cpp.obj: \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/poly_hermite.tcc \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/poly_laguerre.tcc \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/riemann_zeta.tcc \
+ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/algorithm \
+ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algo.h \
+ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/algorithmfwd.h \
+ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_heap.h \
+ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/uniform_int_dist.h \
+ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/glue_algorithm_defs.h \
+ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/complex \
  D:/Lab_3/src/Matrix.hpp D:/Lab_3/src/Matrix.tpp

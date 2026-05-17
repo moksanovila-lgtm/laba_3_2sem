@@ -80,8 +80,7 @@ void PolynomialWidget::setupUI() {
 void PolynomialWidget::updateDisplay() {
     displayLabel->setText(controller->toString());
     
-    infoLabel->setText(QString("Степень: %1 | Тип: %2")
-        .arg(controller->getDegree())
+    infoLabel->setText(QString("Тип: %2")
         .arg(controller->getTypeName()));
     
     coeffList->clear();

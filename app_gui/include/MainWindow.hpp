@@ -25,6 +25,7 @@ private slots:
     void onCreatePolynomial();
     void onTabClose(int index);
     void addNewTab(PolynomialController* controller, const QString& name);
+    void onEvaluate();
     
 public:
     MainWindow(QWidget* parent = nullptr);

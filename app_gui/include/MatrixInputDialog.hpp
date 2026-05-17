@@ -4,6 +4,7 @@
 #include <QTableWidget>
 #include <QSpinBox>
 #include <QPushButton>
+#include <QDoubleSpinBox>
 #include <QVBoxLayout>
 #include <QHBoxLayout>
 #include <QListWidget>   
@@ -21,18 +22,18 @@ private:
     QPushButton* addMatrixBtn;
     QPushButton* clearBtn;
     
-    QList<Matrix<int>> matrices;
+    QList<Matrix<double>> matrices;
     QList<QString> matrixPreviews;
     
     QListWidget* matrixList;
     
     void updateMatrixList();
-    Matrix<int> getMatrixFromTable(int size) const;
+    Matrix<double> getMatrixFromTable(int size) const;
     
 public:
     MatrixInputDialog(QWidget* parent = nullptr);
     
-    QList<Matrix<int>> getMatrices() const { return matrices; }
+    QList<Matrix<double>> getMatrices() const { return matrices; }
     bool isEmpty() const { return matrices.isEmpty(); }
     
 private slots:

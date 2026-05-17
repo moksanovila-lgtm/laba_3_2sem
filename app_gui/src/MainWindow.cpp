@@ -1,6 +1,8 @@
 #include "MainWindow.hpp"
 #include "PolynomialWidget.hpp"
 #include "PolynomialController.hpp"
+#include "MatrixInputDialog.hpp"   
+#include "Matrix.hpp"    
 #include <QMessageBox>
 #include <QInputDialog>
 
@@ -60,7 +62,7 @@ void MainWindow::onCreatePolynomial() {
         bool ok;
         QString coeffsStr = QInputDialog::getText(this, "Ввод коэффициентов",
             "Введите коэффициенты (от младшего к старшему):\n"
-            "Например: 1 2 3 → 1 + 2x + 3x²",
+            "Например: 1 2 3 -> 1 + 2x + 3x^2",
             QLineEdit::Normal, "", &ok);
         if (!ok || coeffsStr.isEmpty()) {
             delete controller;
@@ -72,7 +74,7 @@ void MainWindow::onCreatePolynomial() {
         bool ok;
         QString coeffsStr = QInputDialog::getText(this, "Ввод коэффициентов",
             "Введите коэффициенты (от младшего к старшему):\n"
-            "Например: 1.5 2.5 3.5",
+            "Например: 1.5 2.5 3.5 -> 1.5 + 2.5x + 3.5x^2 ",
             QLineEdit::Normal, "", &ok);
         if (!ok || coeffsStr.isEmpty()) {
             delete controller;
@@ -83,8 +85,8 @@ void MainWindow::onCreatePolynomial() {
     } else if (typeIdx == 2) {  
         bool ok;
         QString coeffsStr = QInputDialog::getText(this, "Ввод коэффициентов",
-            "Введите комплексные коэффициенты:\n"
-            "Формат: 1+2i 3+4i 5+6i",
+            "Введите комплексные коэффициенты (от младшего к старшему):\n"
+            "Например: 1+2i 3+4i 5+6i -> (1+2i) + (3+4i)x + (5+6i)x^2",
             QLineEdit::Normal, "", &ok);
         if (!ok || coeffsStr.isEmpty()) {
             delete controller;
@@ -147,4 +149,41 @@ QString MainWindow::getControllerName(PolynomialController* controller) const {
         }
     }
     return "Unknown";
+}
+
+void MainWindow::onEvaluate() {
+    PolynomialWidget* widget = qobject_cast<PolynomialWidget*>(tabWidget->currentWidget());
+    if (!widget) return;
+    
+    PolynomialController* controller = widget->getController();
+    
+    if (controller->getType() == PolynomialController::TYPE_MATRIX) {
+        MatrixInputDialog dialog;
+        if (dialog.exec() == QDialog::Accepted && !dialog.isEmpty()) {
+            Matrix<double> X = dialog.getMatrices().first();
+
+            QString matrixStr;
+            size_t size = X.GetSize();
+            matrixStr = "[";
+            for (size_t i = 0; i < size; ++i) {
+                if (i > 0) matrixStr += ";";
+                matrixStr += "[";
+                for (size_t j = 0; j < size; ++j) {
+                    if (j > 0) matrixStr += ",";
+                    matrixStr += QString::number(X(i, j));
+                }
+                matrixStr += "]";
+            }
+            matrixStr += "]";
+            
+            controller->evaluate(matrixStr);
+        }
+    } else {
+        bool ok;
+        QString x = QInputDialog::getText(this, "Вычисление значения",
+            "Введите значение x:", QLineEdit::Normal, "", &ok);
+        if (ok && !x.isEmpty()) {
+            controller->evaluate(x);
+        }
+    }
 }

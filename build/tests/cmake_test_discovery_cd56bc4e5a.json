@@ -1,10 +1,10 @@
 {
-  "tests": 35,
+  "tests": 38,
   "name": "AllTests",
   "testsuites": [
     {
       "name": "PolynomialMatrixTest",
-      "tests": 4,
+      "tests": 5,
       "testsuite": [
         {
           "name": "Constructor",
@@ -25,12 +25,17 @@
           "name": "MultiplyByScalar",
           "file": "D:\\Lab_3\\tests\\test_polynomial_matrix.cpp",
           "line": 56
+        },
+        {
+          "name": "Compose",
+          "file": "D:\\Lab_3\\tests\\test_polynomial.cpp",
+          "line": 244
         }
       ]
     },
     {
       "name": "MatrixTest",
-      "tests": 13,
+      "tests": 15,
       "testsuite": [
         {
           "name": "ConstructorWithSize",
@@ -96,6 +101,16 @@
           "name": "GetSize",
           "file": "D:\\Lab_3\\tests\\test_matrix.cpp",
           "line": 126
+        },
+        {
+          "name": "MultiplicationDifferent",
+          "file": "D:\\Lab_3\\tests\\test_matrix.cpp",
+          "line": 152
+        },
+        {
+          "name": "SquareMatrix",
+          "file": "D:\\Lab_3\\tests\\test_matrix.cpp",
+          "line": 182
         }
       ]
     },

@@ -221,58 +221,15 @@ inline std::string Polynomial<std::complex<double>>::ToString() const {
     return ss.str();
 }
 
-
-// template <>
-// inline std::string Polynomial<std::complex<double>>::ToString() const {
-//     if (this->GetCount() == 0) return "0";
-    
-//     std::stringstream ss;
-//     bool first = true;
-    
-//     for (int i = this->GetCount() - 1; i >= 0; --i) {
-//         std::complex<double> coeff = this->Get(i);
-//         if (coeff == std::complex<double>(0, 0)) continue;
-        
-//         if (!first) ss << "+";
-//         first = false;
-        
-//         std::string complexStr;
-//         if (coeff.imag() == 0) {
-//             complexStr = std::to_string(coeff.real());
-//         } else if (coeff.real() == 0) {
-//             complexStr = std::to_string(coeff.imag()) + "i";
-//         } else {
-//             complexStr = std::to_string(coeff.real());
-//             if (coeff.imag() > 0) complexStr += "+";
-//             complexStr += std::to_string(coeff.imag()) + "i";
-//         }
-        
-//         if (i == 0) {
-//             ss << "(" << complexStr << ")";
-//         } else if (i == 1) {
-//             if (complexStr == "1") ss << "x";
-//             else if (complexStr == "-1") ss << "-x";
-//             else ss << "(" << complexStr << ")x";
-//         } else {
-//             if (complexStr == "1") ss << "x^" << i;
-//             else if (complexStr == "-1") ss << "-x^" << i;
-//             else ss << "(" << complexStr << ")x^" << i;
-//         }
-//     }
-    
-//     if (first) return "0";
-//     return ss.str();
-// }
-
 template <>
-inline std::string Polynomial<Matrix<int>>::ToString() const {
+inline std::string Polynomial<Matrix<double>>::ToString() const {
     if (this->GetCount() == 0) return "0";
     
     std::stringstream ss;
     bool first = true;
     
     for (int i = this->GetCount() - 1; i >= 0; --i) {
-        Matrix<int> coeff = this->Get(i);
+        Matrix<double> coeff = this->Get(i);
         
         bool isZero = true;
         for (size_t r = 0; r < coeff.GetSize() && isZero; ++r) {
@@ -312,3 +269,4 @@ Polynomial<T>& Polynomial<T>::operator=(const Polynomial<T>& other) {
     }
     return *this;
 }
+

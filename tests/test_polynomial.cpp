@@ -71,7 +71,7 @@ TEST_F(PolynomialTest, IntMultiply) {
     std::string before2 = PolyToStr(*intPoly2);
     auto result = intPoly1->Multiply(*intPoly2);
     std::string got = PolyToStr(result);
-    std::string expected = "15x^3+23x^2+13x+4";
+    std::string expected = "15x^3+22x^2+13x+4";
     EXPECT_EQ(got, expected) 
         << "Multiply: " << before1 << " * " << before2 << " = expected " << expected << ", got " << got;
 }
@@ -97,7 +97,7 @@ TEST_F(PolynomialTest, IntCompose) {
     std::string before2 = PolyToStr(*intPoly2);
     auto result = intPoly1->Compose(*intPoly2);
     std::string got = PolyToStr(result);
-    std::string expected = "75x^2+170x+96";
+    std::string expected = "75x^2+130x+57";
     EXPECT_EQ(got, expected) 
         << "Compose: " << before1 << "(" << before2 << ") = expected " << expected << ", got " << got;
 }
@@ -117,7 +117,7 @@ TEST_F(PolynomialTest, IntOperatorMultiply) {
     std::string before2 = PolyToStr(*intPoly2);
     auto result = *intPoly1 * *intPoly2;
     std::string got = PolyToStr(result);
-    std::string expected = "15x^3+23x^2+13x+4";
+    std::string expected = "15x^3+22x^2+13x+4";
     EXPECT_EQ(got, expected) 
         << "operator*: " << before1 << " * " << before2 << " = expected " << expected << ", got " << got;
 }
