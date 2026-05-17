@@ -164,6 +164,7 @@ D:/Lab_3/build/app_gui/polynomial_gui_autogen/6YEA5652QU/moc_MatrixInputDialog.c
   C:/Qt/6.11.0/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QDialog \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QDoubleSpinBox \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QHBoxLayout \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLabel \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QListWidget \

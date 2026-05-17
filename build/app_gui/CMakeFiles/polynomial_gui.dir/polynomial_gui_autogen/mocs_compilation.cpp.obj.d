@@ -423,6 +423,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/polynomial_gui_autogen/mocs_compilation.cp
  C:/Qt/6.11.0/mingw_64/include/QtCore/qitemselectionmodel.h \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QSpinBox \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qspinbox.h \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/QDoubleSpinBox \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QListWidget \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlistwidget.h \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlistview.h \

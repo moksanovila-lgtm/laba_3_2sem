@@ -186,6 +186,7 @@ app_gui/polynomial_gui_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe 
   C:/Qt/6.11.0/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QComboBox \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QDialog \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QDoubleSpinBox \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QHBoxLayout \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLabel \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QListWidget \
@@ -824,6 +825,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/polynomial_gui_autogen/mocs_compilation.cp
   C:/Qt/6.11.0/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QComboBox \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QDialog \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QDoubleSpinBox \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QHBoxLayout \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLabel \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QListWidget \
@@ -1299,6 +1301,8 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MainWindow.cpp.obj: D:/Lab_3/app_gui/s
   C:/Qt/6.11.0/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QComboBox \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QDialog \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QDoubleSpinBox \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QHBoxLayout \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QInputDialog \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLabel \
@@ -1306,7 +1310,9 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MainWindow.cpp.obj: D:/Lab_3/app_gui/s
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QMessageBox \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QPushButton \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QSpinBox \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QTabWidget \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QTableWidget \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QVBoxLayout \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QWidget \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractbutton.h \
@@ -1334,9 +1340,12 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MainWindow.cpp.obj: D:/Lab_3/app_gui/s
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qrubberband.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qslider.h \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qspinbox.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qstyle.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qstyleoption.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtabbar.h \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtableview.h \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtablewidget.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtabwidget.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \
@@ -1388,6 +1397,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MainWindow.cpp.obj: D:/Lab_3/app_gui/s
   C:/w64devkit/include/time.h \
   C:/w64devkit/include/vadefs.h \
   C:/w64devkit/include/wchar.h \
+  C:/w64devkit/include/wctype.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/algorithm \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/array \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/atomic \
@@ -1401,6 +1411,8 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MainWindow.cpp.obj: D:/Lab_3/app_gui/s
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/allocator.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_base.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_lockfree_defines.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_ios.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_ios.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_string.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_string.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/char_traits.h \
@@ -1422,9 +1434,12 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MainWindow.cpp.obj: D:/Lab_3/app_gui/s
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/hashtable_policy.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/invoke.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ios_base.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/istream.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/list.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_classes.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_classes.tcc \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/localefwd.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/memory_resource.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/memoryfwd.h \
@@ -1433,6 +1448,8 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MainWindow.cpp.obj: D:/Lab_3/app_gui/s
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/nested_exception.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/new_allocator.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/node_handle.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ostream.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ostream.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ostream_insert.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/parse_numbers.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/postypes.h \
@@ -1499,6 +1516,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MainWindow.cpp.obj: D:/Lab_3/app_gui/s
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstring \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ctime \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cwchar \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cwctype \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/debug/assertions.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/debug/debug.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/exception \
@@ -1511,7 +1529,10 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MainWindow.cpp.obj: D:/Lab_3/app_gui/s
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/type_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/functional \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/initializer_list \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ios \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iosfwd \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iostream \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/istream \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iterator \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/limits \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/list \
@@ -1520,6 +1541,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MainWindow.cpp.obj: D:/Lab_3/app_gui/s
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/new \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/numeric \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/optional \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ostream \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/execution_defs.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/glue_algorithm_defs.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/glue_memory_defs.h \
@@ -1559,6 +1581,8 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MainWindow.cpp.obj: D:/Lab_3/app_gui/s
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
@@ -1571,8 +1595,15 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MainWindow.cpp.obj: D:/Lab_3/app_gui/s
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h \
   D:/Lab_3/app_gui/include/MainWindow.hpp \
+  D:/Lab_3/app_gui/include/MatrixInputDialog.hpp \
   D:/Lab_3/app_gui/include/PolynomialController.hpp \
-  D:/Lab_3/app_gui/include/PolynomialWidget.hpp
+  D:/Lab_3/app_gui/include/PolynomialWidget.hpp \
+  D:/Lab_3/src/Matrix.hpp \
+  D:/Lab_3/src/Matrix.tpp \
+  D:/Lab_3/third_party/Lab_2/library/include/DynamicArray.hpp \
+  D:/Lab_3/third_party/Lab_2/library/include/DynamicArray.tpp \
+  D:/Lab_3/third_party/Lab_2/library/include/ICollection.hpp \
+  D:/Lab_3/third_party/Lab_2/library/include/exceptions.hpp
 
 app_gui/CMakeFiles/polynomial_gui.dir/src/MatrixInputDialog.cpp.obj: D:/Lab_3/app_gui/src/MatrixInputDialog.cpp \
   C:/Qt/6.11.0/mingw_64/include/QtCore/q17memory.h \
@@ -1723,6 +1754,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MatrixInputDialog.cpp.obj: D:/Lab_3/ap
   C:/Qt/6.11.0/mingw_64/include/QtGui/qkeysequence.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qpaintdevice.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qpalette.h \
+  C:/Qt/6.11.0/mingw_64/include/QtGui/qpen.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qpicture.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qpixelformat.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qpixmap.h \
@@ -1730,7 +1762,10 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MatrixInputDialog.cpp.obj: D:/Lab_3/ap
   C:/Qt/6.11.0/mingw_64/include/QtGui/qregion.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qrgb.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qrgba64.h \
+  C:/Qt/6.11.0/mingw_64/include/QtGui/qtextcursor.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qtextdocument.h \
+  C:/Qt/6.11.0/mingw_64/include/QtGui/qtextformat.h \
+  C:/Qt/6.11.0/mingw_64/include/QtGui/qtextoption.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qtgui-config.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qtguiexports.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qtguiglobal.h \
@@ -1739,9 +1774,11 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MatrixInputDialog.cpp.obj: D:/Lab_3/ap
   C:/Qt/6.11.0/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QDialog \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QDoubleSpinBox \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QHBoxLayout \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QHeaderView \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLabel \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLineEdit \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QListWidget \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QListWidgetItem \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QMessageBox \
@@ -1764,6 +1801,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MatrixInputDialog.cpp.obj: D:/Lab_3/ap
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlabel.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlayout.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlayoutitem.h \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlineedit.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlistview.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlistwidget.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qmessagebox.h \
@@ -2632,6 +2670,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/PolynomialController.cpp.obj: D:/Lab_3
   C:/Qt/6.11.0/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.11.0/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QDialog \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QDoubleSpinBox \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QHBoxLayout \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLabel \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QListWidget \
@@ -3119,6 +3158,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/PolynomialWidget.cpp.obj: D:/Lab_3/app
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QListWidget \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QMessageBox \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QPushButton \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QScrollArea \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QVBoxLayout \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QWidget \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractbutton.h \
@@ -3143,6 +3183,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/PolynomialWidget.cpp.obj: D:/Lab_3/app
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qmessagebox.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qpushbutton.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qrubberband.h \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qscrollarea.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qslider.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/qstyle.h \
@@ -4473,6 +4514,8 @@ C:/Qt/6.11.0/mingw_64/include/QtGui/qwindowdefs_win.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/QComboBox:
 
+C:/Qt/6.11.0/mingw_64/include/QtWidgets/QDoubleSpinBox:
+
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/QHBoxLayout:
 
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLabel:
@@ -4553,6 +4596,8 @@ C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake:
 
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgets-config.h:
 
+C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLineEdit:
+
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/qwidget.h:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets-relwithdebinfo.cmake:
@@ -4598,6 +4643,8 @@ C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginAdditionalTargetInfo.cmake:
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicSbomCpeHelpers.cmake:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:
+
+C:/Qt/6.11.0/mingw_64/include/QtWidgets/QScrollArea:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake:
 
@@ -5242,6 +5289,8 @@ D:/Lab_3/src/Polynomial.hpp:
 D:/Lab_3/third_party/Lab_2/library/include/ArraySequence.hpp:
 
 D:/Lab_3/third_party/Lab_2/library/include/IEnumerator.hpp:
+
+C:/Qt/6.11.0/mingw_64/include/QtWidgets/qscrollarea.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtCore/qabstracteventdispatcher.h:
 

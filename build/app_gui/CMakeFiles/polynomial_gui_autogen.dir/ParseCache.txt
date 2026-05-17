@@ -577,6 +577,7 @@ D:/Lab_3/app_gui/include/MatrixInputDialog.hpp
  mdp:C:/Qt/6.11.0/mingw_64/include/QtGui/qwindowdefs.h
  mdp:C:/Qt/6.11.0/mingw_64/include/QtGui/qwindowdefs_win.h
  mdp:C:/Qt/6.11.0/mingw_64/include/QtWidgets/QDialog
+ mdp:C:/Qt/6.11.0/mingw_64/include/QtWidgets/QDoubleSpinBox
  mdp:C:/Qt/6.11.0/mingw_64/include/QtWidgets/QHBoxLayout
  mdp:C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLabel
  mdp:C:/Qt/6.11.0/mingw_64/include/QtWidgets/QListWidget

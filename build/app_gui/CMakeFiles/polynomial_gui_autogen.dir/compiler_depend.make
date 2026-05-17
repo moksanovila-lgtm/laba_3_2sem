@@ -186,6 +186,7 @@ app_gui/polynomial_gui_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe 
   C:/Qt/6.11.0/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QComboBox \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QDialog \
+  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QDoubleSpinBox \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QHBoxLayout \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QLabel \
   C:/Qt/6.11.0/mingw_64/include/QtWidgets/QListWidget \
@@ -1269,6 +1270,8 @@ C:/Qt/6.11.0/mingw_64/include/QtGui/qtransform.h:
 C:/Qt/6.11.0/mingw_64/include/QtGui/qwindowdefs_win.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/QComboBox:
+
+C:/Qt/6.11.0/mingw_64/include/QtWidgets/QDoubleSpinBox:
 
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/QHBoxLayout:
 
