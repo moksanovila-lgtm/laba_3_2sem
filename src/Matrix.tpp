@@ -64,11 +64,35 @@ Matrix<T>& Matrix<T>::operator=(const Matrix& other) {
 
 template <typename T>
 T& Matrix<T>::operator()(size_t i, size_t j) {
+    if (i >= n) {
+        throw std::out_of_range(
+            "Matrix index out of range: row " + std::to_string(i) + 
+            " >= size " + std::to_string(n)
+        );
+    }
+    if (j >= n) {
+        throw std::out_of_range(
+            "Matrix index out of range: column " + std::to_string(j) + 
+            " >= size " + std::to_string(n)
+        );
+    }
     return data.Get(i).Get(j);
 }
 
 template <typename T>
 const T& Matrix<T>::operator()(size_t i, size_t j) const {
+    if (i >= n) {
+        throw std::out_of_range(
+            "Matrix index out of range: row " + std::to_string(i) + 
+            " >= size " + std::to_string(n)
+        );
+    }
+    if (j >= n) {
+        throw std::out_of_range(
+            "Matrix index out of range: column " + std::to_string(j) + 
+            " >= size " + std::to_string(n)
+        );
+    }
     return data.Get(i).Get(j);
 }
 
@@ -81,8 +105,11 @@ template <typename T>
 Matrix<T> Matrix<T>::operator+(const Matrix& other) const {
     if (n == 0) return other;
     if (other.n == 0) return *this;
-    if (n != other.n) {
-        throw std::invalid_argument("Matrix sizes differ");
+     if (n != other.n) {
+        throw std::invalid_argument(
+            "Matrix sizes differ: " + std::to_string(n) + 
+            " vs " + std::to_string(other.n)
+        );
     }
     Matrix result(n);
     for (size_t i = 0; i < n; ++i) {
@@ -96,9 +123,11 @@ Matrix<T> Matrix<T>::operator+(const Matrix& other) const {
 template <typename T>
 Matrix<T> Matrix<T>::operator*(const Matrix& other) const {
     if (n == 0 || other.n == 0) return Matrix<T>();
-    
     if (n != other.n) {
-        throw std::invalid_argument("Matrix sizes differ");
+        throw std::invalid_argument(
+            "Matrix sizes differ: " + std::to_string(n) + 
+            " vs " + std::to_string(other.n)
+        );
     }
     Matrix result(n);
     for (size_t i = 0; i < n; ++i) {

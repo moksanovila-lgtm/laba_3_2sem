@@ -156,12 +156,19 @@ void MainWindow::onEvaluate() {
     if (!widget) return;
     
     PolynomialController* controller = widget->getController();
+    if (!controller) return;
     
     if (controller->getType() == PolynomialController::TYPE_MATRIX) {
         MatrixInputDialog dialog;
         if (dialog.exec() == QDialog::Accepted && !dialog.isEmpty()) {
-            Matrix<double> X = dialog.getMatrices().first();
-
+            QList<Matrix<double>> matrices = dialog.getMatrices();
+            if (matrices.isEmpty()) {
+                QMessageBox::warning(this, "Ошибка", "Не введена матрица");
+                return;
+            }
+            
+            Matrix<double> X = matrices.first();
+            
             QString matrixStr;
             size_t size = X.GetSize();
             matrixStr = "[";
@@ -178,7 +185,8 @@ void MainWindow::onEvaluate() {
             
             controller->evaluate(matrixStr);
         }
-    } else {
+    } 
+    else {
         bool ok;
         QString x = QInputDialog::getText(this, "Вычисление значения",
             "Введите значение x:", QLineEdit::Normal, "", &ok);

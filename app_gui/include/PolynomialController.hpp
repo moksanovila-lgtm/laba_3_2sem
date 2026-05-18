@@ -3,6 +3,7 @@
 #include <QObject>
 #include <QString>
 #include <QVector>
+#include "Matrix.hpp" 
 
 class PolynomialController : public QObject {
     Q_OBJECT
@@ -42,6 +43,7 @@ public:
     void multiplyWithIndex(int otherIndex);
     void multiplyByScalar(const QString& scalar);
     void evaluate(const QString& x);
+    void evaluate(const Matrix<double>& X);
     void composeWithIndex(int otherIndex);
     
     QString toString() const;

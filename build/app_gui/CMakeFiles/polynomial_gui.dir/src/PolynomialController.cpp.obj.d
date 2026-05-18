@@ -310,12 +310,14 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/PolynomialController.cpp.obj: \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ctime \
  C:/Qt/6.11.0/mingw_64/include/QtCore/QString \
  C:/Qt/6.11.0/mingw_64/include/QtCore/QVector \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qvector.h \
- D:/Lab_3/src/Polynomial.hpp \
- D:/Lab_3/third_party/Lab_2/library/include/ArraySequence.hpp \
- D:/Lab_3/third_party/Lab_2/library/include/Sequence.hpp \
- C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/sstream \
- C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/istream \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qvector.h D:/Lab_3/src/Matrix.hpp \
+ D:/Lab_3/third_party/Lab_2/library/include/DynamicArray.hpp \
+ D:/Lab_3/third_party/Lab_2/library/include/ICollection.hpp \
+ D:/Lab_3/third_party/Lab_2/library/include/exceptions.hpp \
+ D:/Lab_3/third_party/Lab_2/library/include/DynamicArray.tpp \
+ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iostream \
+ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ostream \
+ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ostream.h \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ios \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_ios.h \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets.h \
@@ -325,16 +327,15 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/PolynomialController.cpp.obj: \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets.tcc \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_ios.tcc \
- C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ostream \
- C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ostream.h \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ostream.tcc \
+ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/istream \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/istream.tcc \
+ D:/Lab_3/src/Matrix.tpp D:/Lab_3/src/Polynomial.hpp \
+ D:/Lab_3/third_party/Lab_2/library/include/ArraySequence.hpp \
+ D:/Lab_3/third_party/Lab_2/library/include/Sequence.hpp \
+ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/sstream \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/sstream.tcc \
- D:/Lab_3/third_party/Lab_2/library/include/ICollection.hpp \
  D:/Lab_3/third_party/Lab_2/library/include/IEnumerator.hpp \
- D:/Lab_3/third_party/Lab_2/library/include/DynamicArray.hpp \
- D:/Lab_3/third_party/Lab_2/library/include/exceptions.hpp \
- D:/Lab_3/third_party/Lab_2/library/include/DynamicArray.tpp \
  D:/Lab_3/third_party/Lab_2/library/include/ArraySequence.tpp \
  D:/Lab_3/src/Polynomial.tpp \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iomanip \
@@ -347,9 +348,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/PolynomialController.cpp.obj: \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_conv.h \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/quoted_string.h \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/complex \
- D:/Lab_3/src/Matrix.hpp \
- C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iostream \
- D:/Lab_3/src/Matrix.tpp D:/Lab_3/app_gui/include/MatrixInputDialog.hpp \
+ D:/Lab_3/app_gui/include/MatrixInputDialog.hpp \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QDialog \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qdialog.h \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \

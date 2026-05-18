@@ -1,10 +1,10 @@
 {
-  "tests": 38,
+  "tests": 37,
   "name": "AllTests",
   "testsuites": [
     {
       "name": "PolynomialMatrixTest",
-      "tests": 5,
+      "tests": 6,
       "testsuite": [
         {
           "name": "Constructor",
@@ -14,28 +14,33 @@
         {
           "name": "Evaluate",
           "file": "D:\\Lab_3\\tests\\test_polynomial_matrix.cpp",
-          "line": 37
+          "line": 36
         },
         {
           "name": "Add",
           "file": "D:\\Lab_3\\tests\\test_polynomial_matrix.cpp",
-          "line": 47
+          "line": 43
         },
         {
           "name": "MultiplyByScalar",
           "file": "D:\\Lab_3\\tests\\test_polynomial_matrix.cpp",
-          "line": 56
+          "line": 55
+        },
+        {
+          "name": "Multiply",
+          "file": "D:\\Lab_3\\tests\\test_polynomial_matrix.cpp",
+          "line": 65
         },
         {
           "name": "Compose",
-          "file": "D:\\Lab_3\\tests\\test_polynomial.cpp",
-          "line": 244
+          "file": "D:\\Lab_3\\tests\\test_polynomial_matrix.cpp",
+          "line": 78
         }
       ]
     },
     {
       "name": "MatrixTest",
-      "tests": 15,
+      "tests": 13,
       "testsuite": [
         {
           "name": "ConstructorWithSize",
@@ -101,16 +106,6 @@
           "name": "GetSize",
           "file": "D:\\Lab_3\\tests\\test_matrix.cpp",
           "line": 126
-        },
-        {
-          "name": "MultiplicationDifferent",
-          "file": "D:\\Lab_3\\tests\\test_matrix.cpp",
-          "line": 152
-        },
-        {
-          "name": "SquareMatrix",
-          "file": "D:\\Lab_3\\tests\\test_matrix.cpp",
-          "line": 182
         }
       ]
     },

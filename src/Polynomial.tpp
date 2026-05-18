@@ -95,6 +95,16 @@ T Polynomial<T>::Evaluate(const T& x) const {
     return result;
 }
 
+template <>
+inline Matrix<double> Polynomial<Matrix<double>>::Evaluate(const Matrix<double>& x) const {
+    if (this->GetCount() == 0) return Matrix<double>();
+    Matrix<double> result = this->Get(this->GetCount() - 1);
+    for (int i = this->GetCount() - 2; i >= 0; --i) {
+        result = result * x + this->Get(i);
+    }
+    return result;
+}
+
 template <typename T>
 Polynomial<T> Polynomial<T>::Compose(const Polynomial<T>& other) const {
     Polynomial<T> result;

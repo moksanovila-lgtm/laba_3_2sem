@@ -35,6 +35,7 @@ public:
     
     QList<Matrix<double>> getMatrices() const { return matrices; }
     bool isEmpty() const { return matrices.isEmpty(); }
+    static Matrix<double> getSingleMatrix(QWidget* parent = nullptr);
     
 private slots:
     void onSizeChanged(int size);

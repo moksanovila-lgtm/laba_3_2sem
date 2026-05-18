@@ -1,9 +1,12 @@
 #include "PolynomialWidget.hpp"
 #include "PolynomialController.hpp"
+#include "MatrixInputDialog.hpp"
+#include "Matrix.hpp"
 #include "OperationDialog.hpp"
 #include <QMessageBox>
 #include <QScrollArea>
 #include <QInputDialog>
+#include <sstream>
 
 PolynomialWidget::PolynomialWidget(PolynomialController* ctrl, QWidget* parent)
     : QWidget(parent), controller(ctrl) {
@@ -155,11 +158,18 @@ void PolynomialWidget::onScalar() {
 }
 
 void PolynomialWidget::onEvaluate() {
-    bool ok;
-    QString x = QInputDialog::getText(this, "Вычисление значения",
-        "Введите значение x:", QLineEdit::Normal, "", &ok);
-    if (ok && !x.isEmpty()) {
-        controller->evaluate(x);
+    if (controller->getType() == PolynomialController::TYPE_MATRIX) {
+        Matrix<double> X = MatrixInputDialog::getSingleMatrix(this);
+        if (X.GetSize() > 0) {
+            controller->evaluate(X);
+        }
+    } else {
+        bool ok;
+        QString x = QInputDialog::getText(this, "Вычисление значения",
+            "Введите значение x:", QLineEdit::Normal, "", &ok);
+        if (ok && !x.isEmpty()) {
+            controller->evaluate(x);
+        }
     }
 }
 

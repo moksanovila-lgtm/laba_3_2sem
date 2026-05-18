@@ -415,17 +415,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MainWindow.cpp.obj: \
  C:/Qt/6.11.0/mingw_64/include/QtCore/QObject \
  C:/Qt/6.11.0/mingw_64/include/QtCore/QString \
  C:/Qt/6.11.0/mingw_64/include/QtCore/QVector \
- C:/Qt/6.11.0/mingw_64/include/QtCore/qvector.h \
- D:/Lab_3/app_gui/include/MatrixInputDialog.hpp \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/QDialog \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/qdialog.h \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/QTableWidget \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtablewidget.h \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtableview.h \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/QSpinBox \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/qspinbox.h \
- C:/Qt/6.11.0/mingw_64/include/QtWidgets/QDoubleSpinBox \
- D:/Lab_3/src/Matrix.hpp \
+ C:/Qt/6.11.0/mingw_64/include/QtCore/qvector.h D:/Lab_3/src/Matrix.hpp \
  D:/Lab_3/third_party/Lab_2/library/include/DynamicArray.hpp \
  D:/Lab_3/third_party/Lab_2/library/include/ICollection.hpp \
  D:/Lab_3/third_party/Lab_2/library/include/exceptions.hpp \
@@ -445,7 +435,15 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MainWindow.cpp.obj: \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ostream.tcc \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/istream \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/istream.tcc \
- D:/Lab_3/src/Matrix.tpp \
+ D:/Lab_3/src/Matrix.tpp D:/Lab_3/app_gui/include/MatrixInputDialog.hpp \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/QDialog \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/qdialog.h \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/QTableWidget \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtablewidget.h \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtableview.h \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/QSpinBox \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/qspinbox.h \
+ C:/Qt/6.11.0/mingw_64/include/QtWidgets/QDoubleSpinBox \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/QMessageBox \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qmessagebox.h \
  C:/Qt/6.11.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \

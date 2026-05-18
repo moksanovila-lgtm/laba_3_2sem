@@ -1,6 +1,6 @@
 #include "PolynomialController.hpp"
 #include "Polynomial.hpp"
-#include "Matrix.hpp"
+#include "Matrix.hpp" 
 #include "MatrixInputDialog.hpp"
 #include <complex>
 #include <QStringList>
@@ -380,9 +380,9 @@ void PolynomialController::multiplyByScalar(const QString& scalarStr) {
             
         } else if (type == TYPE_MATRIX) {
             bool ok;
-            int scalar = scalarStr.toInt(&ok);
+            double scalar = scalarStr.toDouble(&ok);
             if (!ok) {
-                emit error("Для матриц скаляр должен быть целым числом: " + scalarStr);
+                emit error("Для матриц скаляр должен быть вещественным числом: " + scalarStr);
                 return;
             }
             auto* p = static_cast<Polynomial<Matrix<double>>*>(polynomial);
@@ -404,14 +404,15 @@ Matrix<double> parseMatrixFromString(const QString& str) {
     
     QStringList rows = s.split(';');
     int size = rows.size();
-    
     Matrix<double> result(size);
     
     for (int i = 0; i < rows.size(); ++i) {
         QString row = rows[i].trimmed();
-        if (row.startsWith('[') && row.endsWith(']')) {
+        
+        if (row.startsWith('(') && row.endsWith(')')) {
             row = row.mid(1, row.length() - 2);
         }
+        
         QStringList values = row.split(',');
         
         for (int j = 0; j < values.size(); ++j) {
@@ -711,4 +712,22 @@ void PolynomialController::setCurrentPolynomial(void* newPoly, Type newType) {
     polynomial = newPoly;
     type = newType;
     emit dataChanged();
+}
+
+void PolynomialController::evaluate(const Matrix<double>& X) {
+    try {
+        if (type != TYPE_MATRIX) {
+            emit error("Многочлен не является матричным");
+            return;
+        }
+        
+        auto* p = static_cast<Polynomial<Matrix<double>>*>(polynomial);
+        Matrix<double> result = p->Evaluate(X);
+        
+        std::stringstream ss;
+        ss << result;
+        emit error(QString("Результат вычисления: %1").arg(QString::fromStdString(ss.str())));
+    } catch (const std::exception& e) {
+        emit error(QString("Ошибка при вычислении: ") + e.what());
+    }
 }

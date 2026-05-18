@@ -216,3 +216,66 @@ void MatrixInputDialog::onRemoveMatrix(int row) {
     }
 }
 
+Matrix<double> MatrixInputDialog::getSingleMatrix(QWidget* parent) {
+    QDialog dialog(parent);
+    dialog.setWindowTitle("Введите матрицу");
+    dialog.setModal(true);
+    dialog.setMinimumSize(400, 300);
+    
+    QVBoxLayout* layout = new QVBoxLayout(&dialog);
+    
+    QSpinBox* sizeSpin = new QSpinBox();
+    sizeSpin->setRange(1, 5);
+    sizeSpin->setValue(2);
+    layout->addWidget(new QLabel("Размер матрицы:"));
+    layout->addWidget(sizeSpin);
+    
+    QTableWidget* table = new QTableWidget();
+    layout->addWidget(table);
+    
+    QPushButton* okBtn = new QPushButton("OK");
+    QPushButton* cancelBtn = new QPushButton("Отмена");
+    QHBoxLayout* btnLayout = new QHBoxLayout();
+    btnLayout->addWidget(okBtn);
+    btnLayout->addWidget(cancelBtn);
+    layout->addLayout(btnLayout);
+    
+    auto updateTable = [&]() {
+        int size = sizeSpin->value();
+        table->clear();
+        table->setRowCount(size);
+        table->setColumnCount(size);
+        for (int i = 0; i < size; ++i) {
+            for (int j = 0; j < size; ++j) {
+                QTableWidgetItem* item = new QTableWidgetItem("0");
+                item->setTextAlignment(Qt::AlignCenter);
+                table->setItem(i, j, item);
+            }
+        }
+        table->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+        table->verticalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+    };
+    
+    updateTable();
+    
+    QObject::connect(sizeSpin, QOverload<int>::of(&QSpinBox::valueChanged), 
+        [&](int) { updateTable(); });
+    QObject::connect(okBtn, &QPushButton::clicked, &dialog, &QDialog::accept);
+    QObject::connect(cancelBtn, &QPushButton::clicked, &dialog, &QDialog::reject);
+    
+    if (dialog.exec() == QDialog::Accepted) {
+        int size = sizeSpin->value();
+        Matrix<double> result(size);
+        for (int i = 0; i < size; ++i) {
+            for (int j = 0; j < size; ++j) {
+                QTableWidgetItem* item = table->item(i, j);
+                if (item) {
+                    result(i, j) = item->text().toDouble();
+                }
+            }
+        }
+        return result;
+    }
+    
+    return Matrix<double>(); 
+}

@@ -1400,6 +1400,7 @@ D:/Lab_3/app_gui/include/PolynomialController.hpp
  mdp:C:/w64devkit/include/time.h
  mdp:C:/w64devkit/include/vadefs.h
  mdp:C:/w64devkit/include/wchar.h
+ mdp:C:/w64devkit/include/wctype.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/algorithm
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/array
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/atomic
@@ -1413,6 +1414,8 @@ D:/Lab_3/app_gui/include/PolynomialController.hpp
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/allocator.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_base.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_lockfree_defines.h
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_ios.h
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_ios.tcc
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_string.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_string.tcc
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/char_traits.h
@@ -1434,9 +1437,12 @@ D:/Lab_3/app_gui/include/PolynomialController.hpp
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/hashtable_policy.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/invoke.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ios_base.h
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/istream.tcc
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/list.tcc
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_classes.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_classes.tcc
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets.h
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets.tcc
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/localefwd.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/memory_resource.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/memoryfwd.h
@@ -1444,6 +1450,8 @@ D:/Lab_3/app_gui/include/PolynomialController.hpp
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/nested_exception.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/new_allocator.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/node_handle.h
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ostream.h
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ostream.tcc
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ostream_insert.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/parse_numbers.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/postypes.h
@@ -1505,6 +1513,7 @@ D:/Lab_3/app_gui/include/PolynomialController.hpp
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstring
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ctime
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cwchar
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cwctype
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/debug/assertions.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/debug/debug.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/exception
@@ -1517,7 +1526,10 @@ D:/Lab_3/app_gui/include/PolynomialController.hpp
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/type_traits.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/functional
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/initializer_list
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ios
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iosfwd
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iostream
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/istream
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iterator
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/limits
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/list
@@ -1526,6 +1538,7 @@ D:/Lab_3/app_gui/include/PolynomialController.hpp
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/new
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/numeric
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/optional
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ostream
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/execution_defs.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/glue_numeric_defs.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/pstl_config.h
@@ -1561,6 +1574,8 @@ D:/Lab_3/app_gui/include/PolynomialController.hpp
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h
+ mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h
@@ -1573,6 +1588,12 @@ D:/Lab_3/app_gui/include/PolynomialController.hpp
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h
  mdp:D:/Lab_3/app_gui/include/PolynomialController.hpp
  mdp:D:/Lab_3/build/app_gui/polynomial_gui_autogen/moc_predefs.h
+ mdp:D:/Lab_3/src/Matrix.hpp
+ mdp:D:/Lab_3/src/Matrix.tpp
+ mdp:D:/Lab_3/third_party/Lab_2/library/include/DynamicArray.hpp
+ mdp:D:/Lab_3/third_party/Lab_2/library/include/DynamicArray.tpp
+ mdp:D:/Lab_3/third_party/Lab_2/library/include/ICollection.hpp
+ mdp:D:/Lab_3/third_party/Lab_2/library/include/exceptions.hpp
 D:/Lab_3/app_gui/src/MainWindow.cpp
 D:/Lab_3/app_gui/include/PolynomialWidget.hpp
  mmc:Q_OBJECT
