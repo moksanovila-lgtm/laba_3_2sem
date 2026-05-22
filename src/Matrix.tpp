@@ -107,7 +107,7 @@ Matrix<T> Matrix<T>::operator+(const Matrix& other) const {
     if (other.n == 0) return *this;
      if (n != other.n) {
         throw std::invalid_argument(
-            "Matrix sizes differ: " + std::to_string(n) + 
+            "Matrix sizes different: " + std::to_string(n) + 
             " vs " + std::to_string(other.n)
         );
     }
@@ -125,7 +125,7 @@ Matrix<T> Matrix<T>::operator*(const Matrix& other) const {
     if (n == 0 || other.n == 0) return Matrix<T>();
     if (n != other.n) {
         throw std::invalid_argument(
-            "Matrix sizes differ: " + std::to_string(n) + 
+            "Matrix sizes different: " + std::to_string(n) + 
             " vs " + std::to_string(other.n)
         );
     }

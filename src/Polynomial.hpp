@@ -1,4 +1,5 @@
 #pragma once
+
 #include "../third_party/Lab_2/library/include/ArraySequence.hpp"
 #include <string>
 #include <sstream>

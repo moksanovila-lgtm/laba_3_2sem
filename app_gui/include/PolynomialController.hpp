@@ -9,17 +9,18 @@ class PolynomialController : public QObject {
     Q_OBJECT
     
 public:
-    enum Type {
+    enum class Type {
         TYPE_NONE,
         TYPE_INT,
         TYPE_DOUBLE,
         TYPE_COMPLEX,
         TYPE_MATRIX
     };
+
     
 private:
-    Type type = TYPE_NONE;
-    void* polynomial = nullptr;
+    Type type = Type::TYPE_NONE;
+    void* polynomial = nullptr;/// TYPE SAFETY!!!!!!!!!!
     
     static QVector<PolynomialController*> allControllers;
     

@@ -98,7 +98,7 @@ void MainWindow::onCreatePolynomial() {
         controller->createMatrixPolynomial();
     }
     
-    if (controller->getType() == PolynomialController::TYPE_NONE) {
+    if (controller->getType() == PolynomialController::Type::TYPE_NONE) {
         delete controller;
         QMessageBox::warning(this, "Ошибка", "Не удалось создать многочлен");
         return;
@@ -158,7 +158,7 @@ void MainWindow::onEvaluate() {
     PolynomialController* controller = widget->getController();
     if (!controller) return;
     
-    if (controller->getType() == PolynomialController::TYPE_MATRIX) {
+    if (controller->getType() == PolynomialController::Type::TYPE_NONE) {
         MatrixInputDialog dialog;
         if (dialog.exec() == QDialog::Accepted && !dialog.isEmpty()) {
             QList<Matrix<double>> matrices = dialog.getMatrices();

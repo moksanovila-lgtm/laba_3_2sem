@@ -18,13 +18,13 @@ PolynomialController::PolynomialController(QObject* parent) : QObject(parent) {
 PolynomialController::~PolynomialController() {
     unregisterController(this);
     
-    if (type == TYPE_INT) {
+    if (type == Type::TYPE_INT) {
         delete static_cast<Polynomial<int>*>(polynomial);
-    } else if (type == TYPE_DOUBLE) {
+    } else if (type == Type::TYPE_DOUBLE) {
         delete static_cast<Polynomial<double>*>(polynomial);
-    } else if (type == TYPE_COMPLEX) {
+    } else if (type == Type::TYPE_COMPLEX) {
         delete static_cast<Polynomial<std::complex<double>>*>(polynomial);
-    } else if (type == TYPE_MATRIX) {
+    } else if (type == Type::TYPE_MATRIX) {
         delete static_cast<Polynomial<Matrix<double>>*>(polynomial);
     }
     polynomial = nullptr;
@@ -80,7 +80,7 @@ void PolynomialController::createIntPolynomial(const QString& coeffsStr) {
         p->Append(c);
     }
     
-    type = TYPE_INT;
+    type = Type::TYPE_INT;
     polynomial = p;
     emit dataChanged();
 }
@@ -108,7 +108,7 @@ void PolynomialController::createDoublePolynomial(const QString& coeffsStr) {
         p->Append(c);
     }
     
-    type = TYPE_DOUBLE;
+    type = Type::TYPE_DOUBLE;
     polynomial = p;
     emit dataChanged();
 }
@@ -179,7 +179,7 @@ void PolynomialController::createComplexPolynomial(const QString& coeffsStr) {
         p->Append(c);
     }
     
-    type = TYPE_COMPLEX;
+    type = Type::TYPE_COMPLEX;
     polynomial = p;
     emit dataChanged();
 }
@@ -197,7 +197,7 @@ void PolynomialController::createMatrixPolynomial() {
             for (int i = 0; i < coeffs.size(); ++i) {
                 p->Append(coeffs[i]);
             }
-            type = TYPE_MATRIX;
+            type = Type::TYPE_MATRIX;
             polynomial = p;
             emit dataChanged();
         } else {
@@ -225,22 +225,22 @@ void PolynomialController::addWithIndex(int otherIndex) {
     result->type = type;
     
     try {
-        if (type == TYPE_INT) {
+        if (type == Type::TYPE_INT) {
             auto* p1 = static_cast<Polynomial<int>*>(polynomial);
             auto* p2 = static_cast<Polynomial<int>*>(other->polynomial);
             auto* pResult = new Polynomial<int>(p1->Add(*p2));
             result->polynomial = pResult;
-        } else if (type == TYPE_DOUBLE) {
+        } else if (type == Type::TYPE_DOUBLE) {
             auto* p1 = static_cast<Polynomial<double>*>(polynomial);
             auto* p2 = static_cast<Polynomial<double>*>(other->polynomial);
             auto* pResult = new Polynomial<double>(p1->Add(*p2));
             result->polynomial = pResult;
-        } else if (type == TYPE_COMPLEX) {
+        } else if (type == Type::TYPE_COMPLEX) {
             auto* p1 = static_cast<Polynomial<std::complex<double>>*>(polynomial);
             auto* p2 = static_cast<Polynomial<std::complex<double>>*>(other->polynomial);
             auto* pResult = new Polynomial<std::complex<double>>(p1->Add(*p2));
             result->polynomial = pResult;
-        } else if (type == TYPE_MATRIX) {
+        } else if (type == Type::TYPE_MATRIX) {
             auto* p1 = static_cast<Polynomial<Matrix<double>>*>(polynomial);
             auto* p2 = static_cast<Polynomial<Matrix<double>>*>(other->polynomial);
             auto* pResult = new Polynomial<Matrix<double>>(p1->Add(*p2));
@@ -272,22 +272,22 @@ void PolynomialController::multiplyWithIndex(int otherIndex) {
     result->type = type;
     
     try {
-        if (type == TYPE_INT) {
+        if (type == Type::TYPE_INT) {
             auto* p1 = static_cast<Polynomial<int>*>(polynomial);
             auto* p2 = static_cast<Polynomial<int>*>(other->polynomial);
             auto* pResult = new Polynomial<int>(p1->Multiply(*p2));
             result->polynomial = pResult;
-        } else if (type == TYPE_DOUBLE) {
+        } else if (type == Type::TYPE_DOUBLE) {
             auto* p1 = static_cast<Polynomial<double>*>(polynomial);
             auto* p2 = static_cast<Polynomial<double>*>(other->polynomial);
             auto* pResult = new Polynomial<double>(p1->Multiply(*p2));
             result->polynomial = pResult;
-        } else if (type == TYPE_COMPLEX) {
+        } else if (type == Type::TYPE_COMPLEX) {
             auto* p1 = static_cast<Polynomial<std::complex<double>>*>(polynomial);
             auto* p2 = static_cast<Polynomial<std::complex<double>>*>(other->polynomial);
             auto* pResult = new Polynomial<std::complex<double>>(p1->Multiply(*p2));
             result->polynomial = pResult;
-        } else if (type == TYPE_MATRIX) {
+        } else if (type == Type::TYPE_MATRIX) {
             auto* p1 = static_cast<Polynomial<Matrix<double>>*>(polynomial);
             auto* p2 = static_cast<Polynomial<Matrix<double>>*>(other->polynomial);
             auto* pResult = new Polynomial<Matrix<double>>(p1->Multiply(*p2));
@@ -303,9 +303,42 @@ void PolynomialController::multiplyWithIndex(int otherIndex) {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 void PolynomialController::multiplyByScalar(const QString& scalarStr) {
     try {
-        if (type == TYPE_INT) {
+        if (type == Type::TYPE_INT) {
             bool ok;
             int scalar = scalarStr.toInt(&ok);
             if (!ok) {
@@ -316,7 +349,7 @@ void PolynomialController::multiplyByScalar(const QString& scalarStr) {
             *p = p->MultiplyByScalar(scalar);  
             emit dataChanged(); 
             
-        } else if (type == TYPE_DOUBLE) {
+        } else if (type == Type::TYPE_DOUBLE) {
             bool ok;
             double scalar = scalarStr.toDouble(&ok);
             if (!ok) {
@@ -327,7 +360,7 @@ void PolynomialController::multiplyByScalar(const QString& scalarStr) {
             *p = p->MultiplyByScalar(scalar);
             emit dataChanged();
             
-        } else if (type == TYPE_COMPLEX) {
+        } else if (type == Type::TYPE_COMPLEX) {
             double real = 0, imag = 0;
             QString trimmed = scalarStr.trimmed();
             int plusPos = trimmed.indexOf('+');
@@ -378,7 +411,7 @@ void PolynomialController::multiplyByScalar(const QString& scalarStr) {
             *p = p->MultiplyByScalar(scalar);
             emit dataChanged();
             
-        } else if (type == TYPE_MATRIX) {
+        } else if (type == Type::TYPE_MATRIX) {
             bool ok;
             double scalar = scalarStr.toDouble(&ok);
             if (!ok) {
@@ -432,7 +465,7 @@ void PolynomialController::evaluate(const QString& xStr) {
     QString resultStr;
     
     try {
-        if (type == TYPE_INT) {
+        if (type == Type::TYPE_INT) {
             bool ok;
             int x = xStr.toInt(&ok);
             if (!ok) {
@@ -443,7 +476,7 @@ void PolynomialController::evaluate(const QString& xStr) {
             int result = p->Evaluate(x);
             resultStr = QString::number(result);
             
-        } else if (type == TYPE_DOUBLE) {
+        } else if (type == Type::TYPE_DOUBLE) {
             bool ok;
             double x = xStr.toDouble(&ok);
             if (!ok) {
@@ -454,7 +487,7 @@ void PolynomialController::evaluate(const QString& xStr) {
             double result = p->Evaluate(x);
             resultStr = QString::number(result);
             
-        } else if (type == TYPE_COMPLEX) {
+        } else if (type == Type::TYPE_COMPLEX) {
             double real = 0, imag = 0;
             QString trimmed = xStr.trimmed();
             int plusPos = trimmed.indexOf('+');
@@ -513,7 +546,7 @@ void PolynomialController::evaluate(const QString& xStr) {
                            QString::number(result.imag()) + "i";
             }
             
-        } else if (type == TYPE_MATRIX) {
+        } else if (type == Type::TYPE_MATRIX) {
             Matrix<double> X = parseMatrixFromString(xStr);
             
             auto* p = static_cast<Polynomial<Matrix<double>>*>(polynomial);
@@ -547,25 +580,25 @@ void PolynomialController::composeWithIndex(int otherIndex) {
     result->type = type;
     
     try {
-        if (type == TYPE_INT) {
+        if (type == Type::TYPE_INT) {
             auto* p1 = static_cast<Polynomial<int>*>(polynomial);
             auto* p2 = static_cast<Polynomial<int>*>(other->polynomial);
             auto* pResult = new Polynomial<int>(p1->Compose(*p2));
             result->polynomial = pResult;
             
-        } else if (type == TYPE_DOUBLE) {
+        } else if (type == Type::TYPE_DOUBLE) {
             auto* p1 = static_cast<Polynomial<double>*>(polynomial);
             auto* p2 = static_cast<Polynomial<double>*>(other->polynomial);
             auto* pResult = new Polynomial<double>(p1->Compose(*p2));
             result->polynomial = pResult;
             
-        } else if (type == TYPE_COMPLEX) {
+        } else if (type == Type::TYPE_COMPLEX) {
             auto* p1 = static_cast<Polynomial<std::complex<double>>*>(polynomial);
             auto* p2 = static_cast<Polynomial<std::complex<double>>*>(other->polynomial);
             auto* pResult = new Polynomial<std::complex<double>>(p1->Compose(*p2));
             result->polynomial = pResult;
             
-        } else if (type == TYPE_MATRIX) {
+        } else if (type == Type::TYPE_MATRIX) {
             auto* p1 = static_cast<Polynomial<Matrix<double>>*>(polynomial);
             auto* p2 = static_cast<Polynomial<Matrix<double>>*>(other->polynomial);
             auto* pResult = new Polynomial<Matrix<double>>(p1->Compose(*p2));
@@ -589,13 +622,13 @@ QString PolynomialController::toString() const {
     if (!polynomial) return "0";
     
     try {
-        if (type == TYPE_INT) {
+        if (type == Type::TYPE_INT) {
             return QString::fromStdString(static_cast<Polynomial<int>*>(polynomial)->ToString());
-        } else if (type == TYPE_DOUBLE) {
+        } else if (type == Type::TYPE_DOUBLE) {
             return QString::fromStdString(static_cast<Polynomial<double>*>(polynomial)->ToString());
-        } else if (type == TYPE_COMPLEX) {
+        } else if (type == Type::TYPE_COMPLEX) {
             return QString::fromStdString(static_cast<Polynomial<std::complex<double>>*>(polynomial)->ToString());
-        } else if (type == TYPE_MATRIX) {
+        } else if (type == Type::TYPE_MATRIX) {
             return QString::fromStdString(static_cast<Polynomial<Matrix<double>>*>(polynomial)->ToString());
         }
     } catch (...) {
@@ -607,13 +640,13 @@ QString PolynomialController::toString() const {
 int PolynomialController::getDegree() const {
     if (!polynomial) return 0;
     
-    if (type == TYPE_INT) {
+    if (type == Type::TYPE_INT) {
         return static_cast<Polynomial<int>*>(polynomial)->GetDegree();
-    } else if (type == TYPE_DOUBLE) {
+    } else if (type == Type::TYPE_DOUBLE) {
         return static_cast<Polynomial<double>*>(polynomial)->GetDegree();
-    } else if (type == TYPE_COMPLEX) {
+    } else if (type == Type::TYPE_COMPLEX) {
         return static_cast<Polynomial<std::complex<double>>*>(polynomial)->GetDegree();
-    } else if (type == TYPE_MATRIX) {
+    } else if (type == Type::TYPE_MATRIX) {
         return static_cast<Polynomial<Matrix<double>>*>(polynomial)->GetDegree();
     }
     return 0;
@@ -621,10 +654,10 @@ int PolynomialController::getDegree() const {
 
 QString PolynomialController::getTypeName() const {
     switch (type) {
-        case TYPE_INT: return "int";
-        case TYPE_DOUBLE: return "double";
-        case TYPE_COMPLEX: return "complex";
-        case TYPE_MATRIX: return "matrix";
+        case Type::TYPE_INT: return "int";
+        case Type::TYPE_DOUBLE: return "double";
+        case Type::TYPE_COMPLEX: return "complex";
+        case Type::TYPE_MATRIX: return "matrix";
         default: return "none";
     }
 }
@@ -634,17 +667,17 @@ QVector<QString> PolynomialController::getCoefficientsStrings() const {
     if (!polynomial) return result;
     
     try {
-        if (type == TYPE_INT) {
+        if (type == Type::TYPE_INT) {
             auto* p = static_cast<Polynomial<int>*>(polynomial);
             for (size_t i = 0; i < p->GetCount(); ++i) {
                 result.append(QString::number(p->GetCoefficient(i)));
             }
-        } else if (type == TYPE_DOUBLE) {
+        } else if (type == Type::TYPE_DOUBLE) {
             auto* p = static_cast<Polynomial<double>*>(polynomial);
             for (size_t i = 0; i < p->GetCount(); ++i) {
                 result.append(QString::number(p->GetCoefficient(i)));
             }
-        } else if (type == TYPE_COMPLEX) {
+        } else if (type == Type::TYPE_COMPLEX) {
             auto* p = static_cast<Polynomial<std::complex<double>>*>(polynomial);
             for (size_t i = 0; i < p->GetCount(); ++i) {
                 std::complex<double> c = p->GetCoefficient(i);
@@ -658,7 +691,7 @@ QVector<QString> PolynomialController::getCoefficientsStrings() const {
                     result.append(realStr + (c.imag() > 0 ? "+" : "-") + imagStr + "i");
                 }
             }
-        } else if (type == TYPE_MATRIX) {
+        } else if (type == Type::TYPE_MATRIX) {
             auto* p = static_cast<Polynomial<Matrix<double>>*>(polynomial);
             for (size_t i = 0; i < p->GetCount(); ++i) {
                 Matrix<double> mat = p->GetCoefficient(i);
@@ -699,13 +732,13 @@ void PolynomialController::printAvailablePolynomials() const {
 }
 
 void PolynomialController::setCurrentPolynomial(void* newPoly, Type newType) {
-    if (type == TYPE_INT) {
+    if (type == Type::TYPE_INT) {
         delete static_cast<Polynomial<int>*>(polynomial);
-    } else if (type == TYPE_DOUBLE) {
+    } else if (type == Type::TYPE_DOUBLE) {
         delete static_cast<Polynomial<double>*>(polynomial);
-    } else if (type == TYPE_COMPLEX) {
+    } else if (type == Type::TYPE_COMPLEX) {
         delete static_cast<Polynomial<std::complex<double>>*>(polynomial);
-    } else if (type == TYPE_MATRIX) {
+    } else if (type == Type::TYPE_MATRIX) {
         delete static_cast<Polynomial<Matrix<double>>*>(polynomial);
     }
     
@@ -716,7 +749,7 @@ void PolynomialController::setCurrentPolynomial(void* newPoly, Type newType) {
 
 void PolynomialController::evaluate(const Matrix<double>& X) {
     try {
-        if (type != TYPE_MATRIX) {
+        if (type != Type::TYPE_MATRIX) {
             emit error("Многочлен не является матричным");
             return;
         }

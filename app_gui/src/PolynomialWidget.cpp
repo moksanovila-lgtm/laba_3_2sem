@@ -158,7 +158,7 @@ void PolynomialWidget::onScalar() {
 }
 
 void PolynomialWidget::onEvaluate() {
-    if (controller->getType() == PolynomialController::TYPE_MATRIX) {
+    if (controller->getType() == PolynomialController::Type::TYPE_MATRIX) {
         Matrix<double> X = MatrixInputDialog::getSingleMatrix(this);
         if (X.GetSize() > 0) {
             controller->evaluate(X);
