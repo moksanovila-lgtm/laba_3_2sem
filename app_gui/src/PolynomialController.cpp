@@ -8,26 +8,26 @@
 #include <QDialog>
 #include <sstream>
 #include <iostream>
+#include <variant>
 
 QVector<PolynomialController*> PolynomialController::allControllers;
 
 PolynomialController::PolynomialController(QObject* parent) : QObject(parent) {
     registerController(this);
+    polynomial = std::monostate{};
 }
 
 PolynomialController::~PolynomialController() {
     unregisterController(this);
     
-    if (type == Type::TYPE_INT) {
-        delete static_cast<Polynomial<int>*>(polynomial);
-    } else if (type == Type::TYPE_DOUBLE) {
-        delete static_cast<Polynomial<double>*>(polynomial);
-    } else if (type == Type::TYPE_COMPLEX) {
-        delete static_cast<Polynomial<std::complex<double>>*>(polynomial);
-    } else if (type == Type::TYPE_MATRIX) {
-        delete static_cast<Polynomial<Matrix<double>>*>(polynomial);
-    }
-    polynomial = nullptr;
+    std::visit([](auto& p) {
+        using T = std::decay_t<decltype(p)>;
+        if constexpr (!std::is_same_v<T, std::monostate>) {
+            if (p != nullptr) {
+                delete p;
+            }
+        }
+    }, polynomial);
 }
 
 void PolynomialController::registerController(PolynomialController* ctrl) {
@@ -75,7 +75,7 @@ void PolynomialController::createIntPolynomial(const QString& coeffsStr) {
         return;
     }
     
-    Polynomial<int>* p = new Polynomial<int>();
+    auto* p = new Polynomial<ArraySequence, int>();
     for (int c : coeffs) {
         p->Append(c);
     }
@@ -103,7 +103,7 @@ void PolynomialController::createDoublePolynomial(const QString& coeffsStr) {
         return;
     }
     
-    Polynomial<double>* p = new Polynomial<double>();
+    auto* p = new Polynomial<ArraySequence, double>();
     for (double c : coeffs) {
         p->Append(c);
     }
@@ -174,7 +174,7 @@ void PolynomialController::createComplexPolynomial(const QString& coeffsStr) {
         return;
     }
     
-    Polynomial<std::complex<double>>* p = new Polynomial<std::complex<double>>();
+    auto* p = new Polynomial<ArraySequence, std::complex<double>>();
     for (const auto& c : coeffs) {
         p->Append(c);
     }
@@ -193,14 +193,13 @@ void PolynomialController::createMatrixPolynomial() {
                 emit error("Нет введённых матриц");
                 return;
             }
-            Polynomial<Matrix<double>>* p = new Polynomial<Matrix<double>>();
-            for (int i = 0; i < coeffs.size(); ++i) {
-                p->Append(coeffs[i]);
+            auto* p = new Polynomial<ArraySequence, Matrix<double>>();
+            for (const auto& mat : coeffs) {
+                p->Append(mat);
             }
             type = Type::TYPE_MATRIX;
             polynomial = p;
             emit dataChanged();
-        } else {
         }
     } catch (const std::exception& e) {
         emit error(QString("Ошибка: ") + e.what());
@@ -226,24 +225,24 @@ void PolynomialController::addWithIndex(int otherIndex) {
     
     try {
         if (type == Type::TYPE_INT) {
-            auto* p1 = static_cast<Polynomial<int>*>(polynomial);
-            auto* p2 = static_cast<Polynomial<int>*>(other->polynomial);
-            auto* pResult = new Polynomial<int>(p1->Add(*p2));
+            auto* p1 = std::get<Polynomial<ArraySequence, int>*>(polynomial);
+            auto* p2 = std::get<Polynomial<ArraySequence, int>*>(other->polynomial);
+            auto* pResult = new Polynomial<ArraySequence, int>(p1->Add(*p2));
             result->polynomial = pResult;
         } else if (type == Type::TYPE_DOUBLE) {
-            auto* p1 = static_cast<Polynomial<double>*>(polynomial);
-            auto* p2 = static_cast<Polynomial<double>*>(other->polynomial);
-            auto* pResult = new Polynomial<double>(p1->Add(*p2));
+            auto* p1 = std::get<Polynomial<ArraySequence, double>*>(polynomial);
+            auto* p2 = std::get<Polynomial<ArraySequence, double>*>(other->polynomial);
+            auto* pResult = new Polynomial<ArraySequence, double>(p1->Add(*p2));
             result->polynomial = pResult;
         } else if (type == Type::TYPE_COMPLEX) {
-            auto* p1 = static_cast<Polynomial<std::complex<double>>*>(polynomial);
-            auto* p2 = static_cast<Polynomial<std::complex<double>>*>(other->polynomial);
-            auto* pResult = new Polynomial<std::complex<double>>(p1->Add(*p2));
+            auto* p1 = std::get<Polynomial<ArraySequence, std::complex<double>>*>(polynomial);
+            auto* p2 = std::get<Polynomial<ArraySequence, std::complex<double>>*>(other->polynomial);
+            auto* pResult = new Polynomial<ArraySequence, std::complex<double>>(p1->Add(*p2));
             result->polynomial = pResult;
         } else if (type == Type::TYPE_MATRIX) {
-            auto* p1 = static_cast<Polynomial<Matrix<double>>*>(polynomial);
-            auto* p2 = static_cast<Polynomial<Matrix<double>>*>(other->polynomial);
-            auto* pResult = new Polynomial<Matrix<double>>(p1->Add(*p2));
+            auto* p1 = std::get<Polynomial<ArraySequence, Matrix<double>>*>(polynomial);
+            auto* p2 = std::get<Polynomial<ArraySequence, Matrix<double>>*>(other->polynomial);
+            auto* pResult = new Polynomial<ArraySequence, Matrix<double>>(p1->Add(*p2));
             result->polynomial = pResult;
         }
         
@@ -273,24 +272,24 @@ void PolynomialController::multiplyWithIndex(int otherIndex) {
     
     try {
         if (type == Type::TYPE_INT) {
-            auto* p1 = static_cast<Polynomial<int>*>(polynomial);
-            auto* p2 = static_cast<Polynomial<int>*>(other->polynomial);
-            auto* pResult = new Polynomial<int>(p1->Multiply(*p2));
+            auto* p1 = std::get<Polynomial<ArraySequence, int>*>(polynomial);
+            auto* p2 = std::get<Polynomial<ArraySequence, int>*>(other->polynomial);
+            auto* pResult = new Polynomial<ArraySequence, int>(p1->Multiply(*p2));
             result->polynomial = pResult;
         } else if (type == Type::TYPE_DOUBLE) {
-            auto* p1 = static_cast<Polynomial<double>*>(polynomial);
-            auto* p2 = static_cast<Polynomial<double>*>(other->polynomial);
-            auto* pResult = new Polynomial<double>(p1->Multiply(*p2));
+            auto* p1 = std::get<Polynomial<ArraySequence, double>*>(polynomial);
+            auto* p2 = std::get<Polynomial<ArraySequence, double>*>(other->polynomial);
+            auto* pResult = new Polynomial<ArraySequence, double>(p1->Multiply(*p2));
             result->polynomial = pResult;
         } else if (type == Type::TYPE_COMPLEX) {
-            auto* p1 = static_cast<Polynomial<std::complex<double>>*>(polynomial);
-            auto* p2 = static_cast<Polynomial<std::complex<double>>*>(other->polynomial);
-            auto* pResult = new Polynomial<std::complex<double>>(p1->Multiply(*p2));
+            auto* p1 = std::get<Polynomial<ArraySequence, std::complex<double>>*>(polynomial);
+            auto* p2 = std::get<Polynomial<ArraySequence, std::complex<double>>*>(other->polynomial);
+            auto* pResult = new Polynomial<ArraySequence, std::complex<double>>(p1->Multiply(*p2));
             result->polynomial = pResult;
         } else if (type == Type::TYPE_MATRIX) {
-            auto* p1 = static_cast<Polynomial<Matrix<double>>*>(polynomial);
-            auto* p2 = static_cast<Polynomial<Matrix<double>>*>(other->polynomial);
-            auto* pResult = new Polynomial<Matrix<double>>(p1->Multiply(*p2));
+            auto* p1 = std::get<Polynomial<ArraySequence, Matrix<double>>*>(polynomial);
+            auto* p2 = std::get<Polynomial<ArraySequence, Matrix<double>>*>(other->polynomial);
+            auto* pResult = new Polynomial<ArraySequence, Matrix<double>>(p1->Multiply(*p2));
             result->polynomial = pResult;
         }
         
@@ -303,39 +302,6 @@ void PolynomialController::multiplyWithIndex(int otherIndex) {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 void PolynomialController::multiplyByScalar(const QString& scalarStr) {
     try {
         if (type == Type::TYPE_INT) {
@@ -345,9 +311,9 @@ void PolynomialController::multiplyByScalar(const QString& scalarStr) {
                 emit error("Некорректное целое число: " + scalarStr);
                 return;
             }
-            auto* p = static_cast<Polynomial<int>*>(polynomial);
-            *p = p->MultiplyByScalar(scalar);  
-            emit dataChanged(); 
+            auto* p = std::get<Polynomial<ArraySequence, int>*>(polynomial);
+            *p = p->MultiplyByScalar(scalar);
+            emit dataChanged();
             
         } else if (type == Type::TYPE_DOUBLE) {
             bool ok;
@@ -356,7 +322,7 @@ void PolynomialController::multiplyByScalar(const QString& scalarStr) {
                 emit error("Некорректное вещественное число: " + scalarStr);
                 return;
             }
-            auto* p = static_cast<Polynomial<double>*>(polynomial);
+            auto* p = std::get<Polynomial<ArraySequence, double>*>(polynomial);
             *p = p->MultiplyByScalar(scalar);
             emit dataChanged();
             
@@ -407,7 +373,7 @@ void PolynomialController::multiplyByScalar(const QString& scalarStr) {
             }
             
             std::complex<double> scalar(real, imag);
-            auto* p = static_cast<Polynomial<std::complex<double>>*>(polynomial);
+            auto* p = std::get<Polynomial<ArraySequence, std::complex<double>>*>(polynomial);
             *p = p->MultiplyByScalar(scalar);
             emit dataChanged();
             
@@ -415,10 +381,10 @@ void PolynomialController::multiplyByScalar(const QString& scalarStr) {
             bool ok;
             double scalar = scalarStr.toDouble(&ok);
             if (!ok) {
-                emit error("Для матриц скаляр должен быть вещественным числом: " + scalarStr);
+                emit error("Некорректное число: " + scalarStr);
                 return;
             }
-            auto* p = static_cast<Polynomial<Matrix<double>>*>(polynomial);
+            auto* p = std::get<Polynomial<ArraySequence, Matrix<double>>*>(polynomial);
             *p = p->MultiplyByScalar(Matrix<double>::Identity(2) * scalar);
             emit dataChanged();
         }
@@ -472,7 +438,7 @@ void PolynomialController::evaluate(const QString& xStr) {
                 emit error("Некорректное целое число: " + xStr);
                 return;
             }
-            auto* p = static_cast<Polynomial<int>*>(polynomial);
+            auto* p = std::get<Polynomial<ArraySequence, int>*>(polynomial);
             int result = p->Evaluate(x);
             resultStr = QString::number(result);
             
@@ -483,7 +449,7 @@ void PolynomialController::evaluate(const QString& xStr) {
                 emit error("Некорректное вещественное число: " + xStr);
                 return;
             }
-            auto* p = static_cast<Polynomial<double>*>(polynomial);
+            auto* p = std::get<Polynomial<ArraySequence, double>*>(polynomial);
             double result = p->Evaluate(x);
             resultStr = QString::number(result);
             
@@ -534,7 +500,7 @@ void PolynomialController::evaluate(const QString& xStr) {
             }
             
             std::complex<double> x(real, imag);
-            auto* p = static_cast<Polynomial<std::complex<double>>*>(polynomial);
+            auto* p = std::get<Polynomial<ArraySequence, std::complex<double>>*>(polynomial);
             std::complex<double> result = p->Evaluate(x);
             
             if (result.imag() == 0) {
@@ -548,8 +514,7 @@ void PolynomialController::evaluate(const QString& xStr) {
             
         } else if (type == Type::TYPE_MATRIX) {
             Matrix<double> X = parseMatrixFromString(xStr);
-            
-            auto* p = static_cast<Polynomial<Matrix<double>>*>(polynomial);
+            auto* p = std::get<Polynomial<ArraySequence, Matrix<double>>*>(polynomial);
             Matrix<double> result = p->Evaluate(X);
             
             std::stringstream ss;
@@ -581,34 +546,27 @@ void PolynomialController::composeWithIndex(int otherIndex) {
     
     try {
         if (type == Type::TYPE_INT) {
-            auto* p1 = static_cast<Polynomial<int>*>(polynomial);
-            auto* p2 = static_cast<Polynomial<int>*>(other->polynomial);
-            auto* pResult = new Polynomial<int>(p1->Compose(*p2));
+            auto* p1 = std::get<Polynomial<ArraySequence, int>*>(polynomial);
+            auto* p2 = std::get<Polynomial<ArraySequence, int>*>(other->polynomial);
+            auto* pResult = new Polynomial<ArraySequence, int>(p1->Compose(*p2));
             result->polynomial = pResult;
-            
         } else if (type == Type::TYPE_DOUBLE) {
-            auto* p1 = static_cast<Polynomial<double>*>(polynomial);
-            auto* p2 = static_cast<Polynomial<double>*>(other->polynomial);
-            auto* pResult = new Polynomial<double>(p1->Compose(*p2));
+            auto* p1 = std::get<Polynomial<ArraySequence, double>*>(polynomial);
+            auto* p2 = std::get<Polynomial<ArraySequence, double>*>(other->polynomial);
+            auto* pResult = new Polynomial<ArraySequence, double>(p1->Compose(*p2));
             result->polynomial = pResult;
-            
         } else if (type == Type::TYPE_COMPLEX) {
-            auto* p1 = static_cast<Polynomial<std::complex<double>>*>(polynomial);
-            auto* p2 = static_cast<Polynomial<std::complex<double>>*>(other->polynomial);
-            auto* pResult = new Polynomial<std::complex<double>>(p1->Compose(*p2));
+            auto* p1 = std::get<Polynomial<ArraySequence, std::complex<double>>*>(polynomial);
+            auto* p2 = std::get<Polynomial<ArraySequence, std::complex<double>>*>(other->polynomial);
+            auto* pResult = new Polynomial<ArraySequence, std::complex<double>>(p1->Compose(*p2));
             result->polynomial = pResult;
-            
         } else if (type == Type::TYPE_MATRIX) {
-            auto* p1 = static_cast<Polynomial<Matrix<double>>*>(polynomial);
-            auto* p2 = static_cast<Polynomial<Matrix<double>>*>(other->polynomial);
-            auto* pResult = new Polynomial<Matrix<double>>(p1->Compose(*p2));
+            auto* p1 = std::get<Polynomial<ArraySequence, Matrix<double>>*>(polynomial);
+            auto* p2 = std::get<Polynomial<ArraySequence, Matrix<double>>*>(other->polynomial);
+            auto* pResult = new Polynomial<ArraySequence, Matrix<double>>(p1->Compose(*p2));
             result->polynomial = pResult;
-            
-        } else {
-            delete result;
-            emit error("Композиция для данного типа не реализована");
-            return;
         }
+        
         QString newName = QString("%1 ∘ %2").arg(getControllerName(this)).arg(getControllerName(other));
         emit newPolynomialCreated(result, newName);
         
@@ -619,35 +577,43 @@ void PolynomialController::composeWithIndex(int otherIndex) {
 }
 
 QString PolynomialController::toString() const {
-    if (!polynomial) return "0";
-    
     try {
         if (type == Type::TYPE_INT) {
-            return QString::fromStdString(static_cast<Polynomial<int>*>(polynomial)->ToString());
+            auto* p = std::get<Polynomial<ArraySequence, int>*>(polynomial);
+            return p ? QString::fromStdString(p->ToString()) : "0";
         } else if (type == Type::TYPE_DOUBLE) {
-            return QString::fromStdString(static_cast<Polynomial<double>*>(polynomial)->ToString());
+            auto* p = std::get<Polynomial<ArraySequence, double>*>(polynomial);
+            return p ? QString::fromStdString(p->ToString()) : "0";
         } else if (type == Type::TYPE_COMPLEX) {
-            return QString::fromStdString(static_cast<Polynomial<std::complex<double>>*>(polynomial)->ToString());
+            auto* p = std::get<Polynomial<ArraySequence, std::complex<double>>*>(polynomial);
+            return p ? QString::fromStdString(p->ToString()) : "0";
         } else if (type == Type::TYPE_MATRIX) {
-            return QString::fromStdString(static_cast<Polynomial<Matrix<double>>*>(polynomial)->ToString());
+            auto* p = std::get<Polynomial<ArraySequence, Matrix<double>>*>(polynomial);
+            return p ? QString::fromStdString(p->ToString()) : "0";
         }
     } catch (...) {
-        return "Error";
+        return "0";
     }
     return "0";
 }
 
 int PolynomialController::getDegree() const {
-    if (!polynomial) return 0;
-    
-    if (type == Type::TYPE_INT) {
-        return static_cast<Polynomial<int>*>(polynomial)->GetDegree();
-    } else if (type == Type::TYPE_DOUBLE) {
-        return static_cast<Polynomial<double>*>(polynomial)->GetDegree();
-    } else if (type == Type::TYPE_COMPLEX) {
-        return static_cast<Polynomial<std::complex<double>>*>(polynomial)->GetDegree();
-    } else if (type == Type::TYPE_MATRIX) {
-        return static_cast<Polynomial<Matrix<double>>*>(polynomial)->GetDegree();
+    try {
+        if (type == Type::TYPE_INT) {
+            auto* p = std::get<Polynomial<ArraySequence, int>*>(polynomial);
+            return p ? p->GetDegree() : 0;
+        } else if (type == Type::TYPE_DOUBLE) {
+            auto* p = std::get<Polynomial<ArraySequence, double>*>(polynomial);
+            return p ? p->GetDegree() : 0;
+        } else if (type == Type::TYPE_COMPLEX) {
+            auto* p = std::get<Polynomial<ArraySequence, std::complex<double>>*>(polynomial);
+            return p ? p->GetDegree() : 0;
+        } else if (type == Type::TYPE_MATRIX) {
+            auto* p = std::get<Polynomial<ArraySequence, Matrix<double>>*>(polynomial);
+            return p ? p->GetDegree() : 0;
+        }
+    } catch (...) {
+        return 0;
     }
     return 0;
 }
@@ -664,49 +630,55 @@ QString PolynomialController::getTypeName() const {
 
 QVector<QString> PolynomialController::getCoefficientsStrings() const {
     QVector<QString> result;
-    if (!polynomial) return result;
     
     try {
         if (type == Type::TYPE_INT) {
-            auto* p = static_cast<Polynomial<int>*>(polynomial);
-            for (size_t i = 0; i < p->GetCount(); ++i) {
-                result.append(QString::number(p->GetCoefficient(i)));
+            auto* p = std::get<Polynomial<ArraySequence, int>*>(polynomial);
+            if (p) {
+                for (size_t i = 0; i < p->GetCount(); ++i) {
+                    result.append(QString::number(p->GetCoefficient(i)));
+                }
             }
         } else if (type == Type::TYPE_DOUBLE) {
-            auto* p = static_cast<Polynomial<double>*>(polynomial);
-            for (size_t i = 0; i < p->GetCount(); ++i) {
-                result.append(QString::number(p->GetCoefficient(i)));
+            auto* p = std::get<Polynomial<ArraySequence, double>*>(polynomial);
+            if (p) {
+                for (size_t i = 0; i < p->GetCount(); ++i) {
+                    result.append(QString::number(p->GetCoefficient(i)));
+                }
             }
         } else if (type == Type::TYPE_COMPLEX) {
-            auto* p = static_cast<Polynomial<std::complex<double>>*>(polynomial);
-            for (size_t i = 0; i < p->GetCount(); ++i) {
-                std::complex<double> c = p->GetCoefficient(i);
-                QString realStr = QString::number(c.real());
-                QString imagStr = QString::number(std::abs(c.imag()));
-                if (c.imag() == 0) {
-                    result.append(realStr);
-                } else if (c.real() == 0) {
-                    result.append((c.imag() > 0 ? "" : "-") + imagStr + "i");
-                } else {
-                    result.append(realStr + (c.imag() > 0 ? "+" : "-") + imagStr + "i");
+            auto* p = std::get<Polynomial<ArraySequence, std::complex<double>>*>(polynomial);
+            if (p) {
+                for (size_t i = 0; i < p->GetCount(); ++i) {
+                    std::complex<double> c = p->GetCoefficient(i);
+                    if (c.imag() == 0) {
+                        result.append(QString::number(c.real()));
+                    } else if (c.real() == 0) {
+                        result.append((c.imag() > 0 ? "" : "-") + QString::number(std::abs(c.imag())) + "i");
+                    } else {
+                        result.append(QString::number(c.real()) + (c.imag() > 0 ? "+" : "-") + 
+                                     QString::number(std::abs(c.imag())) + "i");
+                    }
                 }
             }
         } else if (type == Type::TYPE_MATRIX) {
-            auto* p = static_cast<Polynomial<Matrix<double>>*>(polynomial);
-            for (size_t i = 0; i < p->GetCount(); ++i) {
-                Matrix<double> mat = p->GetCoefficient(i);
-                QString matStr;
-                size_t sz = mat.GetSize();
-                for (size_t r = 0; r < sz; ++r) {
-                    if (r > 0) matStr += "; ";
-                    matStr += "[";
-                    for (size_t c = 0; c < sz; ++c) {
-                        if (c > 0) matStr += ", ";
-                        matStr += QString::number(mat(r, c));
+            auto* p = std::get<Polynomial<ArraySequence, Matrix<double>>*>(polynomial);
+            if (p) {
+                for (size_t i = 0; i < p->GetCount(); ++i) {
+                    Matrix<double> mat = p->GetCoefficient(i);
+                    QString matStr;
+                    size_t sz = mat.GetSize();
+                    for (size_t r = 0; r < sz; ++r) {
+                        if (r > 0) matStr += "; ";
+                        matStr += "[";
+                        for (size_t c = 0; c < sz; ++c) {
+                            if (c > 0) matStr += ", ";
+                            matStr += QString::number(mat(r, c));
+                        }
+                        matStr += "]";
                     }
-                    matStr += "]";
+                    result.append(matStr);
                 }
-                result.append(matStr);
             }
         }
     } catch (...) {
@@ -714,8 +686,6 @@ QVector<QString> PolynomialController::getCoefficientsStrings() const {
     }
     return result;
 }
-        
-    
 
 void PolynomialController::printAvailablePolynomials() const {
     QStringList list;
@@ -731,22 +701,6 @@ void PolynomialController::printAvailablePolynomials() const {
     }
 }
 
-void PolynomialController::setCurrentPolynomial(void* newPoly, Type newType) {
-    if (type == Type::TYPE_INT) {
-        delete static_cast<Polynomial<int>*>(polynomial);
-    } else if (type == Type::TYPE_DOUBLE) {
-        delete static_cast<Polynomial<double>*>(polynomial);
-    } else if (type == Type::TYPE_COMPLEX) {
-        delete static_cast<Polynomial<std::complex<double>>*>(polynomial);
-    } else if (type == Type::TYPE_MATRIX) {
-        delete static_cast<Polynomial<Matrix<double>>*>(polynomial);
-    }
-    
-    polynomial = newPoly;
-    type = newType;
-    emit dataChanged();
-}
-
 void PolynomialController::evaluate(const Matrix<double>& X) {
     try {
         if (type != Type::TYPE_MATRIX) {
@@ -754,7 +708,7 @@ void PolynomialController::evaluate(const Matrix<double>& X) {
             return;
         }
         
-        auto* p = static_cast<Polynomial<Matrix<double>>*>(polynomial);
+        auto* p = std::get<Polynomial<ArraySequence, Matrix<double>>*>(polynomial);
         Matrix<double> result = p->Evaluate(X);
         
         std::stringstream ss;

@@ -9,32 +9,32 @@
         {
           "name": "Constructor",
           "file": "D:\\Lab_3\\tests\\test_polynomial_matrix.cpp",
-          "line": 27
+          "line": 29
         },
         {
           "name": "Evaluate",
           "file": "D:\\Lab_3\\tests\\test_polynomial_matrix.cpp",
-          "line": 36
+          "line": 38
         },
         {
           "name": "Add",
           "file": "D:\\Lab_3\\tests\\test_polynomial_matrix.cpp",
-          "line": 43
+          "line": 46
         },
         {
           "name": "MultiplyByScalar",
           "file": "D:\\Lab_3\\tests\\test_polynomial_matrix.cpp",
-          "line": 55
+          "line": 57
         },
         {
           "name": "Multiply",
           "file": "D:\\Lab_3\\tests\\test_polynomial_matrix.cpp",
-          "line": 65
+          "line": 67
         },
         {
           "name": "Compose",
           "file": "D:\\Lab_3\\tests\\test_polynomial_matrix.cpp",
-          "line": 78
+          "line": 80
         }
       ]
     },
@@ -45,67 +45,67 @@
         {
           "name": "ConstructorWithSize",
           "file": "D:\\Lab_3\\tests\\test_matrix.cpp",
-          "line": 31
+          "line": 26
         },
         {
           "name": "ConstructorWithInitializerList",
           "file": "D:\\Lab_3\\tests\\test_matrix.cpp",
-          "line": 39
+          "line": 34
         },
         {
           "name": "Identity",
           "file": "D:\\Lab_3\\tests\\test_matrix.cpp",
-          "line": 46
+          "line": 41
         },
         {
           "name": "OperatorParentheses",
           "file": "D:\\Lab_3\\tests\\test_matrix.cpp",
-          "line": 53
+          "line": 48
         },
         {
           "name": "Addition",
           "file": "D:\\Lab_3\\tests\\test_matrix.cpp",
-          "line": 60
+          "line": 55
         },
         {
           "name": "Multiplication",
           "file": "D:\\Lab_3\\tests\\test_matrix.cpp",
-          "line": 70
+          "line": 65
         },
         {
           "name": "MultiplyByScalar",
           "file": "D:\\Lab_3\\tests\\test_matrix.cpp",
-          "line": 80
+          "line": 75
         },
         {
           "name": "Equality",
           "file": "D:\\Lab_3\\tests\\test_matrix.cpp",
-          "line": 89
+          "line": 84
         },
         {
           "name": "EqualityWithZero",
           "file": "D:\\Lab_3\\tests\\test_matrix.cpp",
-          "line": 98
+          "line": 93
         },
         {
           "name": "CopyConstructor",
           "file": "D:\\Lab_3\\tests\\test_matrix.cpp",
-          "line": 104
+          "line": 99
         },
         {
           "name": "AssignmentOperator",
           "file": "D:\\Lab_3\\tests\\test_matrix.cpp",
-          "line": 112
+          "line": 107
         },
         {
           "name": "IsIdentity",
           "file": "D:\\Lab_3\\tests\\test_matrix.cpp",
-          "line": 121
+          "line": 116
         },
         {
           "name": "GetSize",
           "file": "D:\\Lab_3\\tests\\test_matrix.cpp",
-          "line": 126
+          "line": 121
         }
       ]
     },
@@ -116,22 +116,22 @@
         {
           "name": "IntConstructor",
           "file": "D:\\Lab_3\\tests\\test_polynomial.cpp",
-          "line": 35
+          "line": 36
         },
         {
           "name": "IntGetCoefficient",
           "file": "D:\\Lab_3\\tests\\test_polynomial.cpp",
-          "line": 41
+          "line": 42
         },
         {
           "name": "IntGetDegree",
           "file": "D:\\Lab_3\\tests\\test_polynomial.cpp",
-          "line": 52
+          "line": 53
         },
         {
           "name": "IntAdd",
           "file": "D:\\Lab_3\\tests\\test_polynomial.cpp",
-          "line": 59
+          "line": 60
         },
         {
           "name": "IntMultiply",
@@ -141,37 +141,37 @@
         {
           "name": "IntMultiplyByScalar",
           "file": "D:\\Lab_3\\tests\\test_polynomial.cpp",
-          "line": 79
+          "line": 78
         },
         {
           "name": "IntEvaluate",
           "file": "D:\\Lab_3\\tests\\test_polynomial.cpp",
-          "line": 88
+          "line": 86
         },
         {
           "name": "IntCompose",
           "file": "D:\\Lab_3\\tests\\test_polynomial.cpp",
-          "line": 95
+          "line": 92
         },
         {
           "name": "IntOperatorPlus",
           "file": "D:\\Lab_3\\tests\\test_polynomial.cpp",
-          "line": 105
+          "line": 101
         },
         {
           "name": "IntOperatorMultiply",
           "file": "D:\\Lab_3\\tests\\test_polynomial.cpp",
-          "line": 115
+          "line": 110
         },
         {
           "name": "DoubleEvaluate",
           "file": "D:\\Lab_3\\tests\\test_polynomial.cpp",
-          "line": 125
+          "line": 119
         },
         {
           "name": "DoubleAdd",
           "file": "D:\\Lab_3\\tests\\test_polynomial.cpp",
-          "line": 133
+          "line": 126
         }
       ]
     },
@@ -182,32 +182,32 @@
         {
           "name": "EmptyPolynomial",
           "file": "D:\\Lab_3\\tests\\test_polynomial.cpp",
-          "line": 143
+          "line": 135
         },
         {
           "name": "ZeroPolynomial",
           "file": "D:\\Lab_3\\tests\\test_polynomial.cpp",
-          "line": 151
+          "line": 143
         },
         {
           "name": "PolynomialWithZeroCoefficients",
           "file": "D:\\Lab_3\\tests\\test_polynomial.cpp",
-          "line": 159
+          "line": 151
         },
         {
           "name": "NegativeCoefficients",
           "file": "D:\\Lab_3\\tests\\test_polynomial.cpp",
-          "line": 168
+          "line": 159
         },
         {
           "name": "CoefficientOne",
           "file": "D:\\Lab_3\\tests\\test_polynomial.cpp",
-          "line": 176
+          "line": 166
         },
         {
           "name": "CoefficientMinusOne",
           "file": "D:\\Lab_3\\tests\\test_polynomial.cpp",
-          "line": 184
+          "line": 173
         }
       ]
     }

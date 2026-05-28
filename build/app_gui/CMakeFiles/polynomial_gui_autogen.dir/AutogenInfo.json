@@ -338,7 +338,7 @@
 	"MOC_PREDEFS_CMD" : 
 	[
 		"C:/w64devkit/bin/c++.exe",
-		"-std=gnu++17",
+		"-std=gnu++20",
 		"-w",
 		"-dM",
 		"-E",

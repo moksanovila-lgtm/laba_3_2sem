@@ -449,6 +449,7 @@ app_gui/polynomial_gui_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe 
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/allocator.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_base.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_lockfree_defines.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_wait.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_ios.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_ios.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_string.h \
@@ -456,6 +457,8 @@ app_gui/polynomial_gui_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe 
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/char_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/charconv.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/chrono.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/chrono_io.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/codecvt.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/concept_check.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/cpp_type_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/cxxabi_forced.h \
@@ -473,12 +476,17 @@ app_gui/polynomial_gui_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe 
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/invoke.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ios_base.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/istream.tcc \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/iterator_concepts.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/list.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_classes.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_classes.tcc \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_conv.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets.tcc \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets_nonio.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets_nonio.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/localefwd.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/max_size_type.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/memory_resource.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/memoryfwd.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/move.h \
@@ -492,15 +500,24 @@ app_gui/polynomial_gui_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe 
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/postypes.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/predefined_ops.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ptr_traits.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/quoted_string.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/range_access.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_algo.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_algobase.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_base.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_cmp.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_uninitialized.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_util.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/refwrap.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/requires_hosted.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/shared_ptr.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/shared_ptr_atomic.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/shared_ptr_base.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/specfun.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/sstream.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_abs.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_function.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_mutex.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algo.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algobase.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_bvector.h \
@@ -540,11 +557,13 @@ app_gui/polynomial_gui_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe 
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cassert \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cctype \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cerrno \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/charconv \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/chrono \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/climits \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/clocale \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cmath \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/compare \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/complex \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/concepts \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstddef \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstdint \
@@ -564,8 +583,10 @@ app_gui/polynomial_gui_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe 
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/numeric_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/string_conversions.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/type_traits.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/format \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/functional \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/initializer_list \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iomanip \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ios \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iosfwd \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iostream \
@@ -573,6 +594,7 @@ app_gui/polynomial_gui_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe 
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iterator \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/limits \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/list \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/locale \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/map \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/memory \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/new \
@@ -584,6 +606,7 @@ app_gui/polynomial_gui_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe 
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/pstl_config.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ratio \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/set \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/sstream \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/stdexcept \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/stdlib.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/streambuf \
@@ -621,7 +644,9 @@ app_gui/polynomial_gui_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe 
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdbool.h \
@@ -643,9 +668,15 @@ app_gui/polynomial_gui_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe 
   app_gui/polynomial_gui_autogen/moc_predefs.h \
   D:/Lab_3/src/Matrix.hpp \
   D:/Lab_3/src/Matrix.tpp \
+  D:/Lab_3/src/Polynomial.hpp \
+  D:/Lab_3/src/Polynomial.tpp \
+  D:/Lab_3/third_party/Lab_2/library/include/ArraySequence.hpp \
+  D:/Lab_3/third_party/Lab_2/library/include/ArraySequence.tpp \
   D:/Lab_3/third_party/Lab_2/library/include/DynamicArray.hpp \
   D:/Lab_3/third_party/Lab_2/library/include/DynamicArray.tpp \
   D:/Lab_3/third_party/Lab_2/library/include/ICollection.hpp \
+  D:/Lab_3/third_party/Lab_2/library/include/IEnumerator.hpp \
+  D:/Lab_3/third_party/Lab_2/library/include/Sequence.hpp \
   D:/Lab_3/third_party/Lab_2/library/include/exceptions.hpp
 
 app_gui/CMakeFiles/polynomial_gui.dir/polynomial_gui_autogen/mocs_compilation.cpp.obj: app_gui/polynomial_gui_autogen/mocs_compilation.cpp \
@@ -928,6 +959,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/polynomial_gui_autogen/mocs_compilation.cp
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/allocator.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_base.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_lockfree_defines.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_wait.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_ios.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_ios.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_string.h \
@@ -935,6 +967,8 @@ app_gui/CMakeFiles/polynomial_gui.dir/polynomial_gui_autogen/mocs_compilation.cp
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/char_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/charconv.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/chrono.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/chrono_io.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/codecvt.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/concept_check.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/cpp_type_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/cxxabi_forced.h \
@@ -944,6 +978,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/polynomial_gui_autogen/mocs_compilation.cp
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/exception.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/exception_defines.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/exception_ptr.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/formatfwd.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/functexcept.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/functional_hash.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/hash_bytes.h \
@@ -952,12 +987,17 @@ app_gui/CMakeFiles/polynomial_gui.dir/polynomial_gui_autogen/mocs_compilation.cp
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/invoke.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ios_base.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/istream.tcc \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/iterator_concepts.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/list.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_classes.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_classes.tcc \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_conv.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets.tcc \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets_nonio.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets_nonio.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/localefwd.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/max_size_type.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/memory_resource.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/memoryfwd.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/monostate.h \
@@ -972,15 +1012,24 @@ app_gui/CMakeFiles/polynomial_gui.dir/polynomial_gui_autogen/mocs_compilation.cp
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/postypes.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/predefined_ops.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ptr_traits.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/quoted_string.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/range_access.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_algo.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_algobase.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_base.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_cmp.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_uninitialized.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_util.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/refwrap.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/requires_hosted.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/shared_ptr.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/shared_ptr_atomic.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/shared_ptr_base.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/specfun.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/sstream.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_abs.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_function.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_mutex.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algo.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algobase.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_bvector.h \
@@ -1008,6 +1057,8 @@ app_gui/CMakeFiles/polynomial_gui.dir/polynomial_gui_autogen/mocs_compilation.cp
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/streambuf_iterator.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/string_view.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stringfwd.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unicode-data.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unicode.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/uniform_int_dist.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unique_ptr.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unordered_map.h \
@@ -1020,11 +1071,13 @@ app_gui/CMakeFiles/polynomial_gui.dir/polynomial_gui_autogen/mocs_compilation.cp
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cassert \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cctype \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cerrno \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/charconv \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/chrono \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/climits \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/clocale \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cmath \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/compare \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/complex \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/concepts \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstddef \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstdint \
@@ -1044,8 +1097,10 @@ app_gui/CMakeFiles/polynomial_gui.dir/polynomial_gui_autogen/mocs_compilation.cp
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/numeric_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/string_conversions.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/type_traits.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/format \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/functional \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/initializer_list \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iomanip \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ios \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iosfwd \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iostream \
@@ -1053,9 +1108,11 @@ app_gui/CMakeFiles/polynomial_gui.dir/polynomial_gui_autogen/mocs_compilation.cp
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iterator \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/limits \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/list \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/locale \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/map \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/memory \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/new \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/numbers \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/numeric \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/optional \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ostream \
@@ -1064,8 +1121,11 @@ app_gui/CMakeFiles/polynomial_gui.dir/polynomial_gui_autogen/mocs_compilation.cp
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/glue_memory_defs.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/glue_numeric_defs.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/pstl_config.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ranges \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ratio \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/set \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/span \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/sstream \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/stdexcept \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/stdlib.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/streambuf \
@@ -1103,7 +1163,9 @@ app_gui/CMakeFiles/polynomial_gui.dir/polynomial_gui_autogen/mocs_compilation.cp
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h \
@@ -1118,9 +1180,15 @@ app_gui/CMakeFiles/polynomial_gui.dir/polynomial_gui_autogen/mocs_compilation.cp
   D:/Lab_3/app_gui/include/PolynomialWidget.hpp \
   D:/Lab_3/src/Matrix.hpp \
   D:/Lab_3/src/Matrix.tpp \
+  D:/Lab_3/src/Polynomial.hpp \
+  D:/Lab_3/src/Polynomial.tpp \
+  D:/Lab_3/third_party/Lab_2/library/include/ArraySequence.hpp \
+  D:/Lab_3/third_party/Lab_2/library/include/ArraySequence.tpp \
   D:/Lab_3/third_party/Lab_2/library/include/DynamicArray.hpp \
   D:/Lab_3/third_party/Lab_2/library/include/DynamicArray.tpp \
   D:/Lab_3/third_party/Lab_2/library/include/ICollection.hpp \
+  D:/Lab_3/third_party/Lab_2/library/include/IEnumerator.hpp \
+  D:/Lab_3/third_party/Lab_2/library/include/Sequence.hpp \
   D:/Lab_3/third_party/Lab_2/library/include/exceptions.hpp \
   app_gui/polynomial_gui_autogen/6YEA5652QU/moc_MainWindow.cpp \
   app_gui/polynomial_gui_autogen/6YEA5652QU/moc_MatrixInputDialog.cpp \
@@ -1411,6 +1479,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MainWindow.cpp.obj: D:/Lab_3/app_gui/s
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/allocator.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_base.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_lockfree_defines.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_wait.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_ios.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_ios.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_string.h \
@@ -1418,6 +1487,8 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MainWindow.cpp.obj: D:/Lab_3/app_gui/s
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/char_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/charconv.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/chrono.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/chrono_io.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/codecvt.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/concept_check.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/cpp_type_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/cxxabi_forced.h \
@@ -1427,6 +1498,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MainWindow.cpp.obj: D:/Lab_3/app_gui/s
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/exception.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/exception_defines.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/exception_ptr.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/formatfwd.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/functexcept.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/functional_hash.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/hash_bytes.h \
@@ -1435,12 +1507,17 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MainWindow.cpp.obj: D:/Lab_3/app_gui/s
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/invoke.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ios_base.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/istream.tcc \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/iterator_concepts.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/list.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_classes.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_classes.tcc \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_conv.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets.tcc \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets_nonio.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets_nonio.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/localefwd.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/max_size_type.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/memory_resource.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/memoryfwd.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/monostate.h \
@@ -1455,15 +1532,24 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MainWindow.cpp.obj: D:/Lab_3/app_gui/s
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/postypes.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/predefined_ops.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ptr_traits.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/quoted_string.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/range_access.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_algo.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_algobase.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_base.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_cmp.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_uninitialized.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_util.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/refwrap.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/requires_hosted.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/shared_ptr.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/shared_ptr_atomic.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/shared_ptr_base.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/specfun.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/sstream.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_abs.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_function.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_mutex.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algo.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algobase.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_bvector.h \
@@ -1491,6 +1577,8 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MainWindow.cpp.obj: D:/Lab_3/app_gui/s
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/streambuf_iterator.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/string_view.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stringfwd.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unicode-data.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unicode.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/uniform_int_dist.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unique_ptr.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unordered_map.h \
@@ -1503,11 +1591,13 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MainWindow.cpp.obj: D:/Lab_3/app_gui/s
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cassert \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cctype \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cerrno \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/charconv \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/chrono \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/climits \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/clocale \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cmath \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/compare \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/complex \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/concepts \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstddef \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstdint \
@@ -1527,8 +1617,10 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MainWindow.cpp.obj: D:/Lab_3/app_gui/s
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/numeric_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/string_conversions.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/type_traits.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/format \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/functional \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/initializer_list \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iomanip \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ios \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iosfwd \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iostream \
@@ -1536,9 +1628,11 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MainWindow.cpp.obj: D:/Lab_3/app_gui/s
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iterator \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/limits \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/list \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/locale \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/map \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/memory \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/new \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/numbers \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/numeric \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/optional \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ostream \
@@ -1547,8 +1641,11 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MainWindow.cpp.obj: D:/Lab_3/app_gui/s
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/glue_memory_defs.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/glue_numeric_defs.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/pstl_config.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ranges \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ratio \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/set \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/span \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/sstream \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/stdexcept \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/stdlib.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/streambuf \
@@ -1586,7 +1683,9 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MainWindow.cpp.obj: D:/Lab_3/app_gui/s
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h \
@@ -1600,9 +1699,15 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MainWindow.cpp.obj: D:/Lab_3/app_gui/s
   D:/Lab_3/app_gui/include/PolynomialWidget.hpp \
   D:/Lab_3/src/Matrix.hpp \
   D:/Lab_3/src/Matrix.tpp \
+  D:/Lab_3/src/Polynomial.hpp \
+  D:/Lab_3/src/Polynomial.tpp \
+  D:/Lab_3/third_party/Lab_2/library/include/ArraySequence.hpp \
+  D:/Lab_3/third_party/Lab_2/library/include/ArraySequence.tpp \
   D:/Lab_3/third_party/Lab_2/library/include/DynamicArray.hpp \
   D:/Lab_3/third_party/Lab_2/library/include/DynamicArray.tpp \
   D:/Lab_3/third_party/Lab_2/library/include/ICollection.hpp \
+  D:/Lab_3/third_party/Lab_2/library/include/IEnumerator.hpp \
+  D:/Lab_3/third_party/Lab_2/library/include/Sequence.hpp \
   D:/Lab_3/third_party/Lab_2/library/include/exceptions.hpp
 
 app_gui/CMakeFiles/polynomial_gui.dir/src/MatrixInputDialog.cpp.obj: D:/Lab_3/app_gui/src/MatrixInputDialog.cpp \
@@ -1880,6 +1985,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MatrixInputDialog.cpp.obj: D:/Lab_3/ap
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/allocator.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_base.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_lockfree_defines.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_wait.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_ios.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_ios.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_string.h \
@@ -1887,6 +1993,8 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MatrixInputDialog.cpp.obj: D:/Lab_3/ap
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/char_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/charconv.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/chrono.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/chrono_io.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/codecvt.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/concept_check.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/cpp_type_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/cxxabi_forced.h \
@@ -1896,6 +2004,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MatrixInputDialog.cpp.obj: D:/Lab_3/ap
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/exception.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/exception_defines.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/exception_ptr.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/formatfwd.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/functexcept.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/functional_hash.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/hash_bytes.h \
@@ -1904,12 +2013,17 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MatrixInputDialog.cpp.obj: D:/Lab_3/ap
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/invoke.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ios_base.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/istream.tcc \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/iterator_concepts.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/list.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_classes.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_classes.tcc \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_conv.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets.tcc \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets_nonio.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets_nonio.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/localefwd.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/max_size_type.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/memory_resource.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/memoryfwd.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/monostate.h \
@@ -1924,15 +2038,24 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MatrixInputDialog.cpp.obj: D:/Lab_3/ap
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/postypes.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/predefined_ops.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ptr_traits.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/quoted_string.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/range_access.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_algo.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_algobase.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_base.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_cmp.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_uninitialized.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_util.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/refwrap.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/requires_hosted.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/shared_ptr.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/shared_ptr_atomic.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/shared_ptr_base.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/specfun.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/sstream.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_abs.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_function.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_mutex.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algo.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algobase.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_bvector.h \
@@ -1960,6 +2083,8 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MatrixInputDialog.cpp.obj: D:/Lab_3/ap
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/streambuf_iterator.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/string_view.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stringfwd.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unicode-data.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unicode.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/uniform_int_dist.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unique_ptr.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unordered_map.h \
@@ -1972,6 +2097,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MatrixInputDialog.cpp.obj: D:/Lab_3/ap
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cassert \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cctype \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cerrno \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/charconv \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/chrono \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/climits \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/clocale \
@@ -1996,8 +2122,10 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MatrixInputDialog.cpp.obj: D:/Lab_3/ap
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/numeric_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/string_conversions.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/type_traits.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/format \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/functional \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/initializer_list \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iomanip \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ios \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iosfwd \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iostream \
@@ -2005,9 +2133,11 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MatrixInputDialog.cpp.obj: D:/Lab_3/ap
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iterator \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/limits \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/list \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/locale \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/map \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/memory \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/new \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/numbers \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/numeric \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/optional \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ostream \
@@ -2016,8 +2146,11 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MatrixInputDialog.cpp.obj: D:/Lab_3/ap
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/glue_memory_defs.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/glue_numeric_defs.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/pstl_config.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ranges \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ratio \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/set \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/span \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/sstream \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/stdexcept \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/stdlib.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/streambuf \
@@ -2055,7 +2188,9 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MatrixInputDialog.cpp.obj: D:/Lab_3/ap
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h \
@@ -2328,6 +2463,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/OperationDialog.cpp.obj: D:/Lab_3/app_
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/allocator.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_base.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_lockfree_defines.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_wait.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_ios.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_ios.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_string.h \
@@ -2335,6 +2471,8 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/OperationDialog.cpp.obj: D:/Lab_3/app_
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/char_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/charconv.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/chrono.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/chrono_io.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/codecvt.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/concept_check.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/cpp_type_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/cxxabi_forced.h \
@@ -2344,6 +2482,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/OperationDialog.cpp.obj: D:/Lab_3/app_
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/exception.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/exception_defines.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/exception_ptr.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/formatfwd.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/functexcept.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/functional_hash.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/hash_bytes.h \
@@ -2352,12 +2491,17 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/OperationDialog.cpp.obj: D:/Lab_3/app_
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/invoke.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ios_base.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/istream.tcc \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/iterator_concepts.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/list.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_classes.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_classes.tcc \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_conv.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets.tcc \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets_nonio.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets_nonio.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/localefwd.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/max_size_type.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/memory_resource.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/memoryfwd.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/monostate.h \
@@ -2372,15 +2516,24 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/OperationDialog.cpp.obj: D:/Lab_3/app_
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/postypes.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/predefined_ops.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ptr_traits.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/quoted_string.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/range_access.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_algo.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_algobase.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_base.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_cmp.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_uninitialized.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_util.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/refwrap.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/requires_hosted.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/shared_ptr.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/shared_ptr_atomic.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/shared_ptr_base.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/specfun.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/sstream.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_abs.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_function.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_mutex.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algo.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algobase.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_bvector.h \
@@ -2408,6 +2561,8 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/OperationDialog.cpp.obj: D:/Lab_3/app_
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/streambuf_iterator.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/string_view.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stringfwd.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unicode-data.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unicode.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/uniform_int_dist.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unique_ptr.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unordered_map.h \
@@ -2420,11 +2575,13 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/OperationDialog.cpp.obj: D:/Lab_3/app_
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cassert \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cctype \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cerrno \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/charconv \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/chrono \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/climits \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/clocale \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cmath \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/compare \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/complex \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/concepts \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstddef \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstdint \
@@ -2444,8 +2601,10 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/OperationDialog.cpp.obj: D:/Lab_3/app_
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/numeric_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/string_conversions.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/type_traits.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/format \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/functional \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/initializer_list \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iomanip \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ios \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iosfwd \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iostream \
@@ -2453,9 +2612,11 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/OperationDialog.cpp.obj: D:/Lab_3/app_
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iterator \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/limits \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/list \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/locale \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/map \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/memory \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/new \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/numbers \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/numeric \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/optional \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ostream \
@@ -2464,8 +2625,11 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/OperationDialog.cpp.obj: D:/Lab_3/app_
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/glue_memory_defs.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/glue_numeric_defs.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/pstl_config.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ranges \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ratio \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/set \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/span \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/sstream \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/stdexcept \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/stdlib.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/streambuf \
@@ -2503,7 +2667,9 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/OperationDialog.cpp.obj: D:/Lab_3/app_
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h \
@@ -2515,9 +2681,15 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/OperationDialog.cpp.obj: D:/Lab_3/app_
   D:/Lab_3/app_gui/include/PolynomialController.hpp \
   D:/Lab_3/src/Matrix.hpp \
   D:/Lab_3/src/Matrix.tpp \
+  D:/Lab_3/src/Polynomial.hpp \
+  D:/Lab_3/src/Polynomial.tpp \
+  D:/Lab_3/third_party/Lab_2/library/include/ArraySequence.hpp \
+  D:/Lab_3/third_party/Lab_2/library/include/ArraySequence.tpp \
   D:/Lab_3/third_party/Lab_2/library/include/DynamicArray.hpp \
   D:/Lab_3/third_party/Lab_2/library/include/DynamicArray.tpp \
   D:/Lab_3/third_party/Lab_2/library/include/ICollection.hpp \
+  D:/Lab_3/third_party/Lab_2/library/include/IEnumerator.hpp \
+  D:/Lab_3/third_party/Lab_2/library/include/Sequence.hpp \
   D:/Lab_3/third_party/Lab_2/library/include/exceptions.hpp
 
 app_gui/CMakeFiles/polynomial_gui.dir/src/PolynomialController.cpp.obj: D:/Lab_3/app_gui/src/PolynomialController.cpp \
@@ -2789,6 +2961,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/PolynomialController.cpp.obj: D:/Lab_3
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/allocator.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_base.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_lockfree_defines.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_wait.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_ios.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_ios.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_string.h \
@@ -2796,6 +2969,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/PolynomialController.cpp.obj: D:/Lab_3
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/char_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/charconv.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/chrono.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/chrono_io.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/codecvt.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/concept_check.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/cpp_type_traits.h \
@@ -2806,6 +2980,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/PolynomialController.cpp.obj: D:/Lab_3
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/exception.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/exception_defines.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/exception_ptr.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/formatfwd.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/functexcept.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/functional_hash.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/hash_bytes.h \
@@ -2814,6 +2989,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/PolynomialController.cpp.obj: D:/Lab_3
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/invoke.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ios_base.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/istream.tcc \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/iterator_concepts.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/list.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_classes.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_classes.tcc \
@@ -2823,6 +2999,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/PolynomialController.cpp.obj: D:/Lab_3
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets_nonio.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets_nonio.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/localefwd.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/max_size_type.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/memory_resource.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/memoryfwd.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/monostate.h \
@@ -2839,6 +3016,12 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/PolynomialController.cpp.obj: D:/Lab_3
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ptr_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/quoted_string.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/range_access.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_algo.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_algobase.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_base.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_cmp.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_uninitialized.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_util.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/refwrap.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/requires_hosted.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/shared_ptr.h \
@@ -2848,6 +3031,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/PolynomialController.cpp.obj: D:/Lab_3
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/sstream.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_abs.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_function.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_mutex.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algo.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algobase.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_bvector.h \
@@ -2875,6 +3059,8 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/PolynomialController.cpp.obj: D:/Lab_3
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/streambuf_iterator.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/string_view.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stringfwd.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unicode-data.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unicode.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/uniform_int_dist.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unique_ptr.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unordered_map.h \
@@ -2887,6 +3073,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/PolynomialController.cpp.obj: D:/Lab_3
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cassert \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cctype \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cerrno \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/charconv \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/chrono \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/climits \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/clocale \
@@ -2912,6 +3099,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/PolynomialController.cpp.obj: D:/Lab_3
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/numeric_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/string_conversions.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/type_traits.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/format \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/functional \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/initializer_list \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iomanip \
@@ -2926,6 +3114,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/PolynomialController.cpp.obj: D:/Lab_3
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/map \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/memory \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/new \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/numbers \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/numeric \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/optional \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ostream \
@@ -2934,8 +3123,10 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/PolynomialController.cpp.obj: D:/Lab_3
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/glue_memory_defs.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/glue_numeric_defs.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/pstl_config.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ranges \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ratio \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/set \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/span \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/sstream \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/stdexcept \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/stdlib.h \
@@ -3000,6 +3191,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/PolynomialController.cpp.obj: D:/Lab_3
   D:/Lab_3/third_party/Lab_2/library/include/exceptions.hpp
 
 app_gui/CMakeFiles/polynomial_gui.dir/src/PolynomialWidget.cpp.obj: D:/Lab_3/app_gui/src/PolynomialWidget.cpp \
+  C:/Qt/6.11.0/mingw_64/include/QtCore/QDebug \
   C:/Qt/6.11.0/mingw_64/include/QtCore/QObject \
   C:/Qt/6.11.0/mingw_64/include/QtCore/QString \
   C:/Qt/6.11.0/mingw_64/include/QtCore/QVector \
@@ -3281,6 +3473,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/PolynomialWidget.cpp.obj: D:/Lab_3/app
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/allocator.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_base.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_lockfree_defines.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_wait.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_ios.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_ios.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_string.h \
@@ -3288,6 +3481,8 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/PolynomialWidget.cpp.obj: D:/Lab_3/app
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/char_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/charconv.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/chrono.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/chrono_io.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/codecvt.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/concept_check.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/cpp_type_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/cxxabi_forced.h \
@@ -3297,6 +3492,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/PolynomialWidget.cpp.obj: D:/Lab_3/app
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/exception.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/exception_defines.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/exception_ptr.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/formatfwd.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/functexcept.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/functional_hash.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/hash_bytes.h \
@@ -3305,12 +3501,17 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/PolynomialWidget.cpp.obj: D:/Lab_3/app
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/invoke.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ios_base.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/istream.tcc \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/iterator_concepts.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/list.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_classes.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_classes.tcc \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_conv.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets.tcc \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets_nonio.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets_nonio.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/localefwd.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/max_size_type.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/memory_resource.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/memoryfwd.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/monostate.h \
@@ -3325,7 +3526,14 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/PolynomialWidget.cpp.obj: D:/Lab_3/app
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/postypes.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/predefined_ops.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ptr_traits.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/quoted_string.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/range_access.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_algo.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_algobase.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_base.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_cmp.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_uninitialized.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_util.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/refwrap.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/requires_hosted.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/shared_ptr.h \
@@ -3335,6 +3543,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/PolynomialWidget.cpp.obj: D:/Lab_3/app
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/sstream.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_abs.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_function.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_mutex.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algo.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algobase.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_bvector.h \
@@ -3362,6 +3571,8 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/PolynomialWidget.cpp.obj: D:/Lab_3/app
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/streambuf_iterator.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/string_view.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stringfwd.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unicode-data.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unicode.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/uniform_int_dist.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unique_ptr.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unordered_map.h \
@@ -3374,11 +3585,13 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/PolynomialWidget.cpp.obj: D:/Lab_3/app
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cassert \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cctype \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cerrno \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/charconv \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/chrono \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/climits \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/clocale \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cmath \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/compare \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/complex \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/concepts \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstddef \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstdint \
@@ -3398,8 +3611,10 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/PolynomialWidget.cpp.obj: D:/Lab_3/app
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/numeric_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/string_conversions.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/type_traits.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/format \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/functional \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/initializer_list \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iomanip \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ios \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iosfwd \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iostream \
@@ -3407,9 +3622,11 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/PolynomialWidget.cpp.obj: D:/Lab_3/app
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iterator \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/limits \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/list \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/locale \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/map \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/memory \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/new \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/numbers \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/numeric \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/optional \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ostream \
@@ -3418,8 +3635,10 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/PolynomialWidget.cpp.obj: D:/Lab_3/app
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/glue_memory_defs.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/glue_numeric_defs.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/pstl_config.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ranges \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ratio \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/set \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/span \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/sstream \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/stdexcept \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/stdlib.h \
@@ -3458,7 +3677,9 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/PolynomialWidget.cpp.obj: D:/Lab_3/app
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h \
@@ -3472,9 +3693,15 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/PolynomialWidget.cpp.obj: D:/Lab_3/app
   D:/Lab_3/app_gui/include/PolynomialWidget.hpp \
   D:/Lab_3/src/Matrix.hpp \
   D:/Lab_3/src/Matrix.tpp \
+  D:/Lab_3/src/Polynomial.hpp \
+  D:/Lab_3/src/Polynomial.tpp \
+  D:/Lab_3/third_party/Lab_2/library/include/ArraySequence.hpp \
+  D:/Lab_3/third_party/Lab_2/library/include/ArraySequence.tpp \
   D:/Lab_3/third_party/Lab_2/library/include/DynamicArray.hpp \
   D:/Lab_3/third_party/Lab_2/library/include/DynamicArray.tpp \
   D:/Lab_3/third_party/Lab_2/library/include/ICollection.hpp \
+  D:/Lab_3/third_party/Lab_2/library/include/IEnumerator.hpp \
+  D:/Lab_3/third_party/Lab_2/library/include/Sequence.hpp \
   D:/Lab_3/third_party/Lab_2/library/include/exceptions.hpp
 
 app_gui/CMakeFiles/polynomial_gui.dir/src/main.cpp.obj: D:/Lab_3/app_gui/src/main.cpp \
@@ -3732,6 +3959,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/main.cpp.obj: D:/Lab_3/app_gui/src/mai
   C:/w64devkit/include/time.h \
   C:/w64devkit/include/vadefs.h \
   C:/w64devkit/include/wchar.h \
+  C:/w64devkit/include/wctype.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/algorithm \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/array \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/atomic \
@@ -3745,11 +3973,16 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/main.cpp.obj: D:/Lab_3/app_gui/src/mai
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/allocator.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_base.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_lockfree_defines.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_wait.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_ios.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_ios.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_string.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_string.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/char_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/charconv.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/chrono.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/chrono_io.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/codecvt.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/concept_check.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/cpp_type_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/cxxabi_forced.h \
@@ -3759,6 +3992,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/main.cpp.obj: D:/Lab_3/app_gui/src/mai
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/exception.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/exception_defines.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/exception_ptr.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/formatfwd.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/functexcept.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/functional_hash.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/hash_bytes.h \
@@ -3766,10 +4000,18 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/main.cpp.obj: D:/Lab_3/app_gui/src/mai
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/hashtable_policy.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/invoke.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ios_base.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/istream.tcc \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/iterator_concepts.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/list.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_classes.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_classes.tcc \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_conv.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets.tcc \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets_nonio.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets_nonio.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/localefwd.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/max_size_type.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/memory_resource.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/memoryfwd.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/monostate.h \
@@ -3777,20 +4019,31 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/main.cpp.obj: D:/Lab_3/app_gui/src/mai
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/nested_exception.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/new_allocator.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/node_handle.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ostream.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ostream.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ostream_insert.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/parse_numbers.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/postypes.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/predefined_ops.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ptr_traits.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/quoted_string.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/range_access.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_algo.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_algobase.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_base.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_cmp.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_uninitialized.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_util.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/refwrap.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/requires_hosted.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/shared_ptr.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/shared_ptr_atomic.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/shared_ptr_base.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/specfun.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/sstream.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_abs.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_function.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_mutex.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algo.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algobase.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_bvector.h \
@@ -3818,6 +4071,8 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/main.cpp.obj: D:/Lab_3/app_gui/src/mai
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/streambuf_iterator.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/string_view.tcc \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stringfwd.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unicode-data.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unicode.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/uniform_int_dist.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unique_ptr.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unordered_map.h \
@@ -3830,6 +4085,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/main.cpp.obj: D:/Lab_3/app_gui/src/mai
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cassert \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cctype \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cerrno \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/charconv \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/chrono \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/climits \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/clocale \
@@ -3843,6 +4099,7 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/main.cpp.obj: D:/Lab_3/app_gui/src/mai
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstring \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ctime \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cwchar \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cwctype \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/debug/assertions.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/debug/debug.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/exception \
@@ -3853,24 +4110,34 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/main.cpp.obj: D:/Lab_3/app_gui/src/mai
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/numeric_traits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/string_conversions.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/type_traits.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/format \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/functional \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/initializer_list \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iomanip \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ios \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iosfwd \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/istream \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iterator \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/limits \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/list \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/locale \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/map \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/memory \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/new \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/numbers \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/numeric \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/optional \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ostream \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/execution_defs.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/glue_algorithm_defs.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/glue_memory_defs.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/glue_numeric_defs.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/pstl_config.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ranges \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ratio \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/set \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/span \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/sstream \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/stdexcept \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/stdlib.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/streambuf \
@@ -3903,10 +4170,14 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/main.cpp.obj: D:/Lab_3/app_gui/src/mai
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
+  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h \
   C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h \
@@ -4041,17 +4312,19 @@ C:/Qt/6.11.0/mingw_64/include/QtCore/qconstructormacros.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtCore/qarraydataops.h:
 
-C:/Qt/6.11.0/mingw_64/include/QtCore/q17memory.h:
+C:/Qt/6.11.0/mingw_64/include/QtGui/qbitmap.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_bvector.h:
 
-C:/Qt/6.11.0/mingw_64/include/QtGui/qbitmap.h:
+C:/Qt/6.11.0/mingw_64/include/QtCore/q17memory.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtCore/q23type_traits.h:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginTargetsPrecheck.cmake:
 
 C:/Qt/6.11.0/mingw_64/include/QtCore/qalloc.h:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unicode.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtCore/q20functional.h:
 
@@ -4087,13 +4360,15 @@ C:/Qt/6.11.0/mingw_64/include/QtCore/qabstractitemmodel.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtGui/qregion.h:
 
-C:/Qt/6.11.0/mingw_64/include/QtWidgets/qpushbutton.h:
-
 C:/Qt/6.11.0/mingw_64/include/QtCore/qcompare_impl.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtCore/qiodevice.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtCore/qstringbuilder.h:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_base.h:
+
+C:/Qt/6.11.0/mingw_64/include/QtWidgets/qpushbutton.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cerrno:
 
@@ -4155,6 +4430,8 @@ C:/Qt/6.11.0/mingw_64/include/QtCore/qdatastream.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtGui/qpaintdevice.h:
 
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/chrono_io.h:
+
 C:/Qt/6.11.0/mingw_64/include/QtCore/qendian.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtCore/qfloat16.h:
@@ -4185,9 +4462,9 @@ C:/Qt/6.11.0/mingw_64/include/QtCore/qglobalstatic.h:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/Qt6Config.cmake:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/quoted_string.h:
-
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargetsPrecheck.cmake:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/quoted_string.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtCore/qhash.h:
 
@@ -4477,13 +4754,13 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ratio:
 
 C:/Qt/6.11.0/mingw_64/include/QtGui/qbrush.h:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_conv.h:
-
 D:/Lab_3/app_gui/src/PolynomialController.cpp:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/pstl_config.h:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_conv.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_relops.h:
 
@@ -4533,10 +4810,6 @@ C:/Qt/6.11.0/mingw_64/include/QtGui/qpixmap.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/qtableview.h:
 
-D:/Lab_3/app_gui/src/OperationDialog.cpp:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_map.h:
-
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/climits:
 
 C:/Qt/6.11.0/mingw_64/include/QtGui/qpolygon.h:
@@ -4581,6 +4854,8 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_pair.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/QPushButton:
 
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_cmp.h:
+
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/QSpinBox:
 
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/QTabWidget:
@@ -4605,13 +4880,15 @@ C:/Qt/6.11.0/mingw_64/include/QtWidgets/qdialog.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtCore/qcoreapplication.h:
 
-C:/Qt/6.11.0/mingw_64/include/QtWidgets/qframe.h:
-
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_multimap.h:
+
+C:/Qt/6.11.0/mingw_64/include/QtWidgets/qframe.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlabel.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlayout.h:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/max_size_type.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/qlistview.h:
 
@@ -4677,8 +4954,6 @@ C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/Qt6TargetsPrecheck.cmake:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtFeature.cmake:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_heap.h:
-
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtFeatureCommon.cmake:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtInstallPaths.cmake:
@@ -4694,6 +4969,8 @@ C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginAdditionalTargetInfo.cmake:
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicSbomCpeHelpers.cmake:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_uninitialized.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/QScrollArea:
 
@@ -4760,10 +5037,6 @@ app_gui/polynomial_gui_autogen/6YEA5652QU/moc_PolynomialController.cpp:
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicTargetHelpers.cmake:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6/QtPublicToolHelpers.cmake:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/alloc_traits.h:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_function.h:
 
 app_gui/polynomial_gui_autogen/mocs_compilation.cpp:
 
@@ -4893,11 +5166,11 @@ C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargetsPrecheck.cmake:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/backward/binders.h:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/codecvt.h:
-
 C:/w64devkit/include/limits.h:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/codecvt.h:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginConfig.cmake:
 
@@ -4923,8 +5196,6 @@ C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginAddit
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginConfig.cmake:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_iterator_base_funcs.h:
-
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargets-relwithdebinfo.cmake:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargetsPrecheck.cmake:
@@ -4934,6 +5205,8 @@ C:/Qt/6.11.0/mingw_64/include/QtGui/qinputmethod.h:
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets_nonio.h:
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake:
 
@@ -4987,6 +5260,8 @@ C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-relwithde
 
 C:/Qt/6.11.0/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargetsPrecheck.cmake:
 
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_algo.h:
+
 C:/w64devkit/include/sec_api/stdlib_s.h:
 
 C:/w64devkit/include/_mingw_mac.h:
@@ -4996,6 +5271,8 @@ C:/w64devkit/include/_mingw_off_t.h:
 C:/w64devkit/include/_mingw_stat64.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/QListWidgetItem:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/charconv:
 
 C:/w64devkit/include/_timeval.h:
 
@@ -5014,8 +5291,6 @@ C:/w64devkit/include/corecrt_wstdlib.h:
 C:/w64devkit/include/time.h:
 
 C:/w64devkit/include/crtdefs.h:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algobase.h:
 
 C:/w64devkit/include/errno.h:
 
@@ -5043,15 +5318,15 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/algorithm:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/backward/auto_ptr.h:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/cxxabi_init_exception.h:
-
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_iterator.h:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/cxxabi_init_exception.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bit:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/algorithmfwd.h:
-
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_list.h:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/algorithmfwd.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/alloc_traits.h:
 
@@ -5059,9 +5334,11 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/allocated_ptr.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_lockfree_defines.h:
 
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_ios.tcc:
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/atomic_wait.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_iterator_base_types.h:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/basic_ios.tcc:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/char_traits.h:
 
@@ -5079,9 +5356,13 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/hashtable_policy
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/istream.tcc:
 
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/iterator_concepts.h:
+
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/complex:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_classes.tcc:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets_nonio.tcc:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/nested_exception.h:
 
@@ -5093,6 +5374,10 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ostream.tcc:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/postypes.h:
 
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_algobase.h:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/ranges_util.h:
+
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/tr1/legendre_function.tcc:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/shared_ptr.h:
@@ -5103,13 +5388,31 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/shared_ptr_base.
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/specfun.h:
 
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/sstream.tcc:
+
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_abs.h:
 
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/alloc_traits.h:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_function.h:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/std_mutex.h:
+
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algo.h:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_algobase.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_construct.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_function.h:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_heap.h:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_iterator_base_funcs.h:
+
+D:/Lab_3/app_gui/src/OperationDialog.cpp:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_map.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/stl_multiset.h:
 
@@ -5185,11 +5488,15 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/string_conversion
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ext/type_traits.h:
 
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/format:
+
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/functional:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/initializer_list:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iomanip:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iosfwd:
 
@@ -5197,11 +5504,15 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iostream:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/istream:
 
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/locale:
+
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/map:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ostream:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/glue_numeric_defs.h:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/sstream:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/stdexcept:
 
@@ -5251,7 +5562,11 @@ C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bi
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/gthr.h:
 
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h:
+
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/time_members.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h:
 
@@ -5279,11 +5594,17 @@ app_gui/polynomial_gui_autogen/moc_predefs.h:
 
 D:/Lab_3/src/Matrix.hpp:
 
+D:/Lab_3/src/Polynomial.hpp:
+
+D:/Lab_3/third_party/Lab_2/library/include/ArraySequence.hpp:
+
 D:/Lab_3/third_party/Lab_2/library/include/DynamicArray.hpp:
 
 D:/Lab_3/third_party/Lab_2/library/include/DynamicArray.tpp:
 
 D:/Lab_3/third_party/Lab_2/library/include/ICollection.hpp:
+
+D:/Lab_3/third_party/Lab_2/library/include/IEnumerator.hpp:
 
 D:/Lab_3/third_party/Lab_2/library/include/exceptions.hpp:
 
@@ -5297,11 +5618,21 @@ C:/w64devkit/include/stddef.h:
 
 C:/w64devkit/include/stdlib.h:
 
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/formatfwd.h:
+
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/monostate.h:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/unicode-data.h:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/numbers:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/glue_algorithm_defs.h:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/pstl/glue_memory_defs.h:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/ranges:
+
+C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/span:
 
 C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h:
 
@@ -5318,28 +5649,6 @@ C:/Qt/6.11.0/mingw_64/include/QtWidgets/qinputdialog.h:
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/qmessagebox.h:
 
 C:/Qt/6.11.0/mingw_64/include/QtCore/QStringList:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets_nonio.h:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/locale_facets_nonio.tcc:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/bits/sstream.tcc:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/iomanip:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/locale:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/sstream:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h:
-
-C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/x86_64-w64-mingw32/bits/time_members.h:
-
-D:/Lab_3/src/Polynomial.hpp:
-
-D:/Lab_3/third_party/Lab_2/library/include/ArraySequence.hpp:
-
-D:/Lab_3/third_party/Lab_2/library/include/IEnumerator.hpp:
 
 C:/Qt/6.11.0/mingw_64/include/QtWidgets/qscrollarea.h:
 

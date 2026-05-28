@@ -4,6 +4,7 @@
 #include "Matrix.hpp"
 #include "OperationDialog.hpp"
 #include <QMessageBox>
+#include <QDebug>
 #include <QScrollArea>
 #include <QInputDialog>
 #include <sstream>
@@ -80,19 +81,43 @@ void PolynomialWidget::setupUI() {
     connect(selectOperandBtn, &QPushButton::clicked, this, &PolynomialWidget::updateOperandList);
 }
 
-void PolynomialWidget::updateDisplay() {
-    displayLabel->setText(controller->toString());
+// void PolynomialWidget::updateDisplay() {
+//     displayLabel->setText(controller->toString());
     
-    infoLabel->setText(QString("Тип: %2")
-        .arg(controller->getTypeName()));
+//     infoLabel->setText(QString("Тип: %2")
+//         .arg(controller->getTypeName()));
+    
+//     coeffList->clear();
+//     QVector<QString> coeffs = controller->getCoefficientsStrings();
+//     for (int i = 0; i < coeffs.size(); ++i) {
+//         coeffList->addItem(QString("a%1 = %2").arg(i).arg(coeffs[i]));
+//     }
+    
+//     updateOperandList(); 
+// }
+
+void PolynomialWidget::updateDisplay() {
+    qDebug() << "updateDisplay: start";
+    qDebug() << "Calling controller->toString()...";
+    
+    QString str = controller->toString();
+    qDebug() << "toString returned:" << str;
+    
+    displayLabel->setText(str);
+    
+    infoLabel->setText(QString("Тип: %2").arg(controller->getTypeName()));
+    
+    qDebug() << "Calling controller->getCoefficientsStrings()...";
+    QVector<QString> coeffs = controller->getCoefficientsStrings();
+    qDebug() << "getCoefficientsStrings returned" << coeffs.size() << "items";
     
     coeffList->clear();
-    QVector<QString> coeffs = controller->getCoefficientsStrings();
     for (int i = 0; i < coeffs.size(); ++i) {
         coeffList->addItem(QString("a%1 = %2").arg(i).arg(coeffs[i]));
     }
     
-    updateOperandList(); 
+    updateOperandList();
+    qDebug() << "updateDisplay: end";
 }
 
 void PolynomialWidget::updateOperandList() {

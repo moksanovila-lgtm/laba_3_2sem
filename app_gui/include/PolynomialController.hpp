@@ -3,7 +3,9 @@
 #include <QObject>
 #include <QString>
 #include <QVector>
-#include "Matrix.hpp" 
+#include <variant>
+#include "Matrix.hpp"
+#include "Polynomial.hpp" 
 
 class PolynomialController : public QObject {
     Q_OBJECT
@@ -20,7 +22,14 @@ public:
     
 private:
     Type type = Type::TYPE_NONE;
-    void* polynomial = nullptr;/// TYPE SAFETY!!!!!!!!!!
+    //void* polynomial = nullptr;/// TYPE SAFETY!!!!!!!!!!
+    std::variant<
+    std::monostate,
+    Polynomial<ArraySequence, int>*,
+    Polynomial<ArraySequence, double>*,
+    Polynomial<ArraySequence, std::complex<double>>*,
+    Polynomial<ArraySequence, Matrix<double>>*
+    > polynomial;
     
     static QVector<PolynomialController*> allControllers;
     
