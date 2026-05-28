@@ -366,5 +366,7 @@ D:/Lab_3/build/app_gui/polynomial_gui_autogen/6YEA5652QU/moc_PolynomialControlle
   D:/Lab_3/third_party/Lab_2/library/include/DynamicArray.tpp \
   D:/Lab_3/third_party/Lab_2/library/include/ICollection.hpp \
   D:/Lab_3/third_party/Lab_2/library/include/IEnumerator.hpp \
+  D:/Lab_3/third_party/Lab_2/library/include/Optional.hpp \
+  D:/Lab_3/third_party/Lab_2/library/include/Optional.tpp \
   D:/Lab_3/third_party/Lab_2/library/include/Sequence.hpp \
   D:/Lab_3/third_party/Lab_2/library/include/exceptions.hpp

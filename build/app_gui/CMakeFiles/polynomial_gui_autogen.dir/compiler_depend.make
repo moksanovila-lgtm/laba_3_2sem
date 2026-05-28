@@ -676,6 +676,8 @@ app_gui/polynomial_gui_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe 
   D:/Lab_3/third_party/Lab_2/library/include/DynamicArray.tpp \
   D:/Lab_3/third_party/Lab_2/library/include/ICollection.hpp \
   D:/Lab_3/third_party/Lab_2/library/include/IEnumerator.hpp \
+  D:/Lab_3/third_party/Lab_2/library/include/Optional.hpp \
+  D:/Lab_3/third_party/Lab_2/library/include/Optional.tpp \
   D:/Lab_3/third_party/Lab_2/library/include/Sequence.hpp \
   D:/Lab_3/third_party/Lab_2/library/include/exceptions.hpp
 
@@ -2031,5 +2033,9 @@ D:/Lab_3/third_party/Lab_2/library/include/DynamicArray.tpp:
 D:/Lab_3/third_party/Lab_2/library/include/ICollection.hpp:
 
 D:/Lab_3/third_party/Lab_2/library/include/IEnumerator.hpp:
+
+D:/Lab_3/third_party/Lab_2/library/include/Optional.hpp:
+
+D:/Lab_3/third_party/Lab_2/library/include/Optional.tpp:
 
 D:/Lab_3/third_party/Lab_2/library/include/exceptions.hpp:

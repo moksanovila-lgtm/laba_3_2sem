@@ -676,6 +676,8 @@ app_gui/polynomial_gui_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe 
   D:/Lab_3/third_party/Lab_2/library/include/DynamicArray.tpp \
   D:/Lab_3/third_party/Lab_2/library/include/ICollection.hpp \
   D:/Lab_3/third_party/Lab_2/library/include/IEnumerator.hpp \
+  D:/Lab_3/third_party/Lab_2/library/include/Optional.hpp \
+  D:/Lab_3/third_party/Lab_2/library/include/Optional.tpp \
   D:/Lab_3/third_party/Lab_2/library/include/Sequence.hpp \
   D:/Lab_3/third_party/Lab_2/library/include/exceptions.hpp
 
@@ -1188,6 +1190,8 @@ app_gui/CMakeFiles/polynomial_gui.dir/polynomial_gui_autogen/mocs_compilation.cp
   D:/Lab_3/third_party/Lab_2/library/include/DynamicArray.tpp \
   D:/Lab_3/third_party/Lab_2/library/include/ICollection.hpp \
   D:/Lab_3/third_party/Lab_2/library/include/IEnumerator.hpp \
+  D:/Lab_3/third_party/Lab_2/library/include/Optional.hpp \
+  D:/Lab_3/third_party/Lab_2/library/include/Optional.tpp \
   D:/Lab_3/third_party/Lab_2/library/include/Sequence.hpp \
   D:/Lab_3/third_party/Lab_2/library/include/exceptions.hpp \
   app_gui/polynomial_gui_autogen/6YEA5652QU/moc_MainWindow.cpp \
@@ -1707,6 +1711,8 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/MainWindow.cpp.obj: D:/Lab_3/app_gui/s
   D:/Lab_3/third_party/Lab_2/library/include/DynamicArray.tpp \
   D:/Lab_3/third_party/Lab_2/library/include/ICollection.hpp \
   D:/Lab_3/third_party/Lab_2/library/include/IEnumerator.hpp \
+  D:/Lab_3/third_party/Lab_2/library/include/Optional.hpp \
+  D:/Lab_3/third_party/Lab_2/library/include/Optional.tpp \
   D:/Lab_3/third_party/Lab_2/library/include/Sequence.hpp \
   D:/Lab_3/third_party/Lab_2/library/include/exceptions.hpp
 
@@ -2689,6 +2695,8 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/OperationDialog.cpp.obj: D:/Lab_3/app_
   D:/Lab_3/third_party/Lab_2/library/include/DynamicArray.tpp \
   D:/Lab_3/third_party/Lab_2/library/include/ICollection.hpp \
   D:/Lab_3/third_party/Lab_2/library/include/IEnumerator.hpp \
+  D:/Lab_3/third_party/Lab_2/library/include/Optional.hpp \
+  D:/Lab_3/third_party/Lab_2/library/include/Optional.tpp \
   D:/Lab_3/third_party/Lab_2/library/include/Sequence.hpp \
   D:/Lab_3/third_party/Lab_2/library/include/exceptions.hpp
 
@@ -3187,6 +3195,8 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/PolynomialController.cpp.obj: D:/Lab_3
   D:/Lab_3/third_party/Lab_2/library/include/DynamicArray.tpp \
   D:/Lab_3/third_party/Lab_2/library/include/ICollection.hpp \
   D:/Lab_3/third_party/Lab_2/library/include/IEnumerator.hpp \
+  D:/Lab_3/third_party/Lab_2/library/include/Optional.hpp \
+  D:/Lab_3/third_party/Lab_2/library/include/Optional.tpp \
   D:/Lab_3/third_party/Lab_2/library/include/Sequence.hpp \
   D:/Lab_3/third_party/Lab_2/library/include/exceptions.hpp
 
@@ -3701,6 +3711,8 @@ app_gui/CMakeFiles/polynomial_gui.dir/src/PolynomialWidget.cpp.obj: D:/Lab_3/app
   D:/Lab_3/third_party/Lab_2/library/include/DynamicArray.tpp \
   D:/Lab_3/third_party/Lab_2/library/include/ICollection.hpp \
   D:/Lab_3/third_party/Lab_2/library/include/IEnumerator.hpp \
+  D:/Lab_3/third_party/Lab_2/library/include/Optional.hpp \
+  D:/Lab_3/third_party/Lab_2/library/include/Optional.tpp \
   D:/Lab_3/third_party/Lab_2/library/include/Sequence.hpp \
   D:/Lab_3/third_party/Lab_2/library/include/exceptions.hpp
 
@@ -5605,6 +5617,10 @@ D:/Lab_3/third_party/Lab_2/library/include/DynamicArray.tpp:
 D:/Lab_3/third_party/Lab_2/library/include/ICollection.hpp:
 
 D:/Lab_3/third_party/Lab_2/library/include/IEnumerator.hpp:
+
+D:/Lab_3/third_party/Lab_2/library/include/Optional.hpp:
+
+D:/Lab_3/third_party/Lab_2/library/include/Optional.tpp:
 
 D:/Lab_3/third_party/Lab_2/library/include/exceptions.hpp:
 

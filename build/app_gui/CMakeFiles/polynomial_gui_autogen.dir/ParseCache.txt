@@ -1352,7 +1352,6 @@ D:/Lab_3/app_gui/include/OperationDialog.hpp
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h
  mdp:D:/Lab_3/app_gui/include/OperationDialog.hpp
  mdp:D:/Lab_3/build/app_gui/polynomial_gui_autogen/moc_predefs.h
-D:/Lab_3/app_gui/src/MatrixInputDialog.cpp
 D:/Lab_3/app_gui/include/PolynomialController.hpp
  mmc:Q_OBJECT
  mdp:C:/Qt/6.11.0/mingw_64/include/QtCore/QObject
@@ -1723,9 +1722,10 @@ D:/Lab_3/app_gui/include/PolynomialController.hpp
  mdp:D:/Lab_3/third_party/Lab_2/library/include/DynamicArray.tpp
  mdp:D:/Lab_3/third_party/Lab_2/library/include/ICollection.hpp
  mdp:D:/Lab_3/third_party/Lab_2/library/include/IEnumerator.hpp
+ mdp:D:/Lab_3/third_party/Lab_2/library/include/Optional.hpp
  mdp:D:/Lab_3/third_party/Lab_2/library/include/Sequence.hpp
  mdp:D:/Lab_3/third_party/Lab_2/library/include/exceptions.hpp
-D:/Lab_3/app_gui/src/MainWindow.cpp
+D:/Lab_3/app_gui/src/MatrixInputDialog.cpp
 D:/Lab_3/app_gui/include/PolynomialWidget.hpp
  mmc:Q_OBJECT
  mdp:C:/Qt/6.11.0/mingw_64/include/QtCore/q17memory.h
@@ -2180,6 +2180,7 @@ D:/Lab_3/app_gui/include/PolynomialWidget.hpp
  mdp:C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h
  mdp:D:/Lab_3/app_gui/include/PolynomialWidget.hpp
  mdp:D:/Lab_3/build/app_gui/polynomial_gui_autogen/moc_predefs.h
+D:/Lab_3/app_gui/src/MainWindow.cpp
 D:/Lab_3/app_gui/src/OperationDialog.cpp
 D:/Lab_3/app_gui/src/PolynomialController.cpp
 D:/Lab_3/app_gui/src/PolynomialWidget.cpp

@@ -492,6 +492,8 @@ app_gui/CMakeFiles/polynomial_gui.dir/polynomial_gui_autogen/mocs_compilation.cp
  D:/Lab_3/third_party/Lab_2/library/include/Sequence.hpp \
  D:/Lab_3/third_party/Lab_2/library/include/IEnumerator.hpp \
  D:/Lab_3/third_party/Lab_2/library/include/ArraySequence.tpp \
+ D:/Lab_3/third_party/Lab_2/library/include/Optional.hpp \
+ D:/Lab_3/third_party/Lab_2/library/include/Optional.tpp \
  D:/Lab_3/src/Polynomial.tpp \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/complex \
  D:\Lab_3\build\app_gui\polynomial_gui_autogen\6YEA5652QU/moc_PolynomialWidget.cpp \
