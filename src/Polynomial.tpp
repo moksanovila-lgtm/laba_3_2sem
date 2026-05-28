@@ -10,7 +10,7 @@
 template <template<typename> class Container, typename T>
 requires PolynomialContainer<Container<T>, T>
 Polynomial<Container, T>::Polynomial() 
-    : coefficients(), degree(std::nullopt) {}
+    : coefficients(), degree() {}
 
 template <template<typename> class Container, typename T>
 requires PolynomialContainer<Container<T>, T>
@@ -35,10 +35,10 @@ Polynomial<Container, T>::Polynomial(const Polynomial& other)
 template <template<typename> class Container, typename T>
 requires PolynomialContainer<Container<T>, T>
 void Polynomial<Container, T>::UpdateDegree() {
-    degree.reset();  
+    degree.Reset();  
     for (int i = coefficients.GetCount() - 1; i >= 0; --i) {
         if (coefficients.Get(i) != T(0)) {
-            degree = i;
+            degree.SetValue(i);  
             return;
         }
     }
@@ -47,7 +47,7 @@ void Polynomial<Container, T>::UpdateDegree() {
 template <template<typename> class Container, typename T>
 requires PolynomialContainer<Container<T>, T>
 int Polynomial<Container, T>::GetDegree() const {
-    return degree.value_or(0);  
+    return degree.GetValueOrDefault(0);
 }
 
 template <template<typename> class Container, typename T>

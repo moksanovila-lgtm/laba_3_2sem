@@ -81,21 +81,6 @@ void PolynomialWidget::setupUI() {
     connect(selectOperandBtn, &QPushButton::clicked, this, &PolynomialWidget::updateOperandList);
 }
 
-// void PolynomialWidget::updateDisplay() {
-//     displayLabel->setText(controller->toString());
-    
-//     infoLabel->setText(QString("Тип: %2")
-//         .arg(controller->getTypeName()));
-    
-//     coeffList->clear();
-//     QVector<QString> coeffs = controller->getCoefficientsStrings();
-//     for (int i = 0; i < coeffs.size(); ++i) {
-//         coeffList->addItem(QString("a%1 = %2").arg(i).arg(coeffs[i]));
-//     }
-    
-//     updateOperandList(); 
-// }
-
 void PolynomialWidget::updateDisplay() {
     qDebug() << "updateDisplay: start";
     qDebug() << "Calling controller->toString()...";

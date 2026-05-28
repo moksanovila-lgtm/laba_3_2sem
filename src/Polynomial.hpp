@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../third_party/Lab_2/library/include/ArraySequence.hpp"
+#include "../third_party/Lab_2/library/include/Optional.hpp"
 #include <string>
 #include <sstream>
 #include <concepts>
@@ -19,7 +20,7 @@ requires PolynomialContainer<Container<T>, T>
 class Polynomial {
 private:
     Container<T> coefficients;
-    std::optional<int> degree;
+    Optional<int> degree;
     void UpdateDegree();
     
 public:

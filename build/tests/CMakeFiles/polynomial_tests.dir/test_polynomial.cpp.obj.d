@@ -259,6 +259,8 @@ tests/CMakeFiles/polynomial_tests.dir/test_polynomial.cpp.obj: \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/cstring \
  D:/Lab_3/third_party/Lab_2/library/include/DynamicArray.tpp \
  D:/Lab_3/third_party/Lab_2/library/include/ArraySequence.tpp \
+ D:/Lab_3/third_party/Lab_2/library/include/Optional.hpp \
+ D:/Lab_3/third_party/Lab_2/library/include/Optional.tpp \
  D:/Lab_3/src/Polynomial.tpp D:/Lab_3/src/Matrix.hpp \
  D:/Lab_3/src/Matrix.tpp \
  C:/w64devkit/lib/gcc/x86_64-w64-mingw32/15.2.0/include/c++/algorithm \
